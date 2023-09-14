@@ -18,15 +18,11 @@ public class DeactivateCanvas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Escape) || !Application.isFocused) && !open)
-        {
-            open = true;
+        open = LoaderMainMenu.Instance.open;
+
+        if (open)
             canvas.SetActive(false);
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape) && open)
-        {
-            open = false;
+        else
             canvas.SetActive(true);
-        }
     }
 }

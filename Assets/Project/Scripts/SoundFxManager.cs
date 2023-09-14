@@ -70,15 +70,17 @@ public class SoundFxManager : MonoBehaviour
     public void RunSand()
     {
         sfxAudioSource.Stop();
-        Debug.Log("RunSand \n");
-        sfxAudioSource.PlayOneShot(sandRun[Random.Range(0, sandRun.Length)], runVolume);
+        //Debug.Log("RunSand \n");
+        //sfxAudioSource.PlayOneShot(sandRun[Random.Range(0, sandRun.Length)], runVolume);
+        sfxAudioSource.PlayOneShot(sandRun[Random.Range(0, sandRun.Length)]);
     }
 
     public void RunSnow()
     {
         sfxAudioSource.Stop();
-        Debug.Log("RunSnow \n");
-        sfxAudioSource.PlayOneShot(snowRun[Random.Range(0, snowRun.Length)], runVolume);
+        //Debug.Log("RunSnow \n");
+        //sfxAudioSource.PlayOneShot(snowRun[Random.Range(0, snowRun.Length)], runVolume);
+        sfxAudioSource.PlayOneShot(snowRun[Random.Range(0, snowRun.Length)]);
     }
 
 }

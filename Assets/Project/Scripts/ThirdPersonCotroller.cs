@@ -29,6 +29,8 @@ public class ThirdPersonCotroller : MonoBehaviour
     private string levelName;
     public float soundTime = 1f;
 
+    private bool isRunning;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,36 +41,41 @@ public class ThirdPersonCotroller : MonoBehaviour
         //baseRadius = capsuleCollider.radius;
         InitialGravity = Physics.gravity;
 
+        isRunning = false;
+
         //Ver si es nieve o desierto
         levelName = SceneManager.GetActiveScene().name;
-        StartCoroutine(PlayRunSound());
+        //StartCoroutine(PlayRunSound());
     }
 
-    //private void FixedUpdate()
-    //{
-    //    //Audio al caminar
-    //    if (Input.GetAxis("Vertical") != 0 || playerAnimatorInfo.IsName("runs"))
-    //    {
-    //        StartCoroutine(PlayRunSound());
-    //    }
-    //}
+    private void FixedUpdate()
+    {
+        //Audio al caminar
+        if (Input.GetAxis("Vertical") != 0 || playerAnimatorInfo.IsName("runs") && !isRunning)
+        {
+            isRunning = true;
+            StartCoroutine(PlayRunSound());
+        }
+    }
 
     IEnumerator PlayRunSound()
     {
-        if(Input.GetAxis("Vertical") != 0 || playerAnimatorInfo.IsName("runs"))
+        //if(Input.GetAxis("Vertical") != 0 || playerAnimatorInfo.IsName("runs"))
+        //{
+        SoundFxManager.Instance.StopSFX();
+        switch (levelName)
         {
-            switch (levelName)
-            {
-                case "level_snow":
-                    SoundFxManager.Instance.RunSnow();
-                    break;
-                case "level_desert":
-                    SoundFxManager.Instance.RunSand();
-                    break;
-            }
-            yield return new WaitForSeconds(soundTime);
-            SoundFxManager.Instance.StopSFX();
+            case "level_snow":
+                SoundFxManager.Instance.RunSnow();
+                break;
+            case "level_desert":
+                SoundFxManager.Instance.RunSand();
+                break;
         }
+        yield return new WaitForSeconds(soundTime);
+        SoundFxManager.Instance.StopSFX();
+        isRunning = false;
+        //}
     }
 
     // Update is called once per frame
