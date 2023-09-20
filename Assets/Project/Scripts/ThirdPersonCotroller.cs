@@ -11,7 +11,7 @@ public class ThirdPersonCotroller : MonoBehaviour
     private AnimatorStateInfo playerAnimatorInfo;
 
     public GameObject playerTarget;
-    public float mouseSensX = 5f, mouseSensY = 5f, rotationSpeed = 10f, counterRotate = 0.8f;
+    public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, rotationSpeed = 0.3f, counterRotate = 0.5f;
     public float speedJump = 10f;
 
     [SerializeField] private float maxAngle = 90f;
@@ -81,9 +81,11 @@ public class ThirdPersonCotroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float horizontal = Input.GetAxis("Horizontal");
+
         playerAnimatorInfo = playerAnimator.GetCurrentAnimatorStateInfo(0);
         playerAnimator.SetFloat("speed", Input.GetAxis("Vertical"));
-        playerAnimator.SetFloat("direction", Input.GetAxis("Horizontal"));
+        playerAnimator.SetFloat("direction", horizontal);
 
         //Para rodar
         if (Input.GetButtonDown("Roll") && playerAnimatorInfo.IsName("runs"))
@@ -112,27 +114,50 @@ public class ThirdPersonCotroller : MonoBehaviour
         //angle between player and camera
         float angle = Vector3.Angle(playerTarget.transform.forward, transform.forward);
         
-        //Para rotar al jugador
-        if (playerAnimator.GetFloat("speed") != 0 && Input.GetAxis("Horizontal") != 0)
-        {
-            transform.Rotate(0, Input.GetAxis("Horizontal") * rotationSpeed, 0);
-            playerTarget.transform.Rotate(0f, - Input.GetAxis("Horizontal") * counterRotate, 0f);
-        }
-
-        if (Input.GetAxis("Vertical") > 0 && playerTarget.transform.rotation != transform.rotation && angle > maxAngle) { 
-            if (playerTarget.transform.rotation.y < transform.rotation.y)
-                playerTarget.transform.Rotate(0, 1f * mouseSensX/5, 0);
-            else
-                playerTarget.transform.Rotate(0, -1f * mouseSensX/5, 0);
-        }
-
-        
         //Rotar camera con mouse
-        playerTarget.transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensX, 0);
-        
-        
+        if(Input.GetAxis("Vertical") != 0)
+        {
+            transform.Rotate(0, Input.GetAxis("Controller X") * controlSensX, 0);
+            //centrar la camara
+            if (angle > maxAngle)
+            {
+                if (playerTarget.transform.rotation.y < transform.rotation.y)
+                    playerTarget.transform.Rotate(0, 1f * mouseSensX, 0);
+                else
+                    playerTarget.transform.Rotate(0, -1f * mouseSensX, 0);
+            }
+            else
+            {   //forzar la camara centrada si se usa mouse
+                transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensX, 0);
+            }
+        } 
+        else
+        {
+            playerTarget.transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensX, 0);
+            playerTarget.transform.Rotate(0, Input.GetAxis("Controller X") * controlSensX, 0);
+        }
+
         //playerTarget.transform.Rotate(0, 0, Input.GetAxis("Mouse Y") * mouseSensY);
-        
+
+        //Para rotar al jugador
+        if (playerAnimator.GetFloat("speed") == 0 && horizontal != 0)
+        {
+            transform.Rotate(0, horizontal * rotationSpeed, 0);
+            if(angle>maxAngle)
+                playerTarget.transform.Rotate(0f, -horizontal * counterRotate, 0f);
+        }
+
+        //if (Input.GetAxis("Vertical") > 0 && playerTarget.transform.rotation != transform.rotation && angle > maxAngle)
+        //{
+        //    if (playerTarget.transform.rotation.y < transform.rotation.y)
+        //        playerTarget.transform.Rotate(0, 1f * mouseSensX / 5 * Time.deltaTime, 0);
+        //    else
+        //        playerTarget.transform.Rotate(0, -1f * mouseSensX / 5 * Time.deltaTime, 0);
+        //}
+
+
+
+
         //Para saludar
         /*if (Input.GetKeyDown(KeyCode.E))
         {
