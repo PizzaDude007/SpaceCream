@@ -1,17 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 public class ThirdPersonCotroller : MonoBehaviour
 {
     private Animator playerAnimator;
     private AnimatorStateInfo playerAnimatorInfo;
 
-    public GameObject playerTarget;
-    public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, rotationSpeed = 0.3f, counterRotate = 0.5f;
+    public GameObject playerTarget, lookTarget;
+    public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, controlSensY = 0.5f, rotationSpeed = 0.3f, counterRotate = 0.5f;
+    public float controlDeadZoneX = 0.1f, controlDeadZoneY = 0.1f;
     public float speedJump = 10f;
 
     [SerializeField] private float maxAngle = 90f;
@@ -27,9 +30,12 @@ public class ThirdPersonCotroller : MonoBehaviour
     private CapsuleCollider capsuleCollider;
 
     private string levelName;
-    public float soundTime = 1f;
+    public float soundTime = 1f, shootTime = 1.8f;
 
     private bool isRunning;
+    
+    private VisualEffect vfxMuzzleFlash;
+    public bool isShooting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +52,8 @@ public class ThirdPersonCotroller : MonoBehaviour
         //Ver si es nieve o desierto
         levelName = SceneManager.GetActiveScene().name;
         //StartCoroutine(PlayRunSound());
+
+        vfxMuzzleFlash = GetComponentInChildren<VisualEffect>();
     }
 
     private void FixedUpdate()
@@ -78,6 +86,23 @@ public class ThirdPersonCotroller : MonoBehaviour
         //}
     }
 
+    IEnumerator IsShootingWait()
+    {
+        isShooting = true;
+        yield return new WaitForSeconds(shootTime*2.5f);
+        //yield return new WaitUntil(() => (!playerAnimator.GetCurrentAnimatorStateInfo(1).IsName("shoot")));
+        //WaitForSeconds wait = new WaitForSeconds(0.5f);
+        isShooting = false;
+    }
+
+    IEnumerator PlayShootVFX()
+    {
+        playerAnimator.SetTrigger("shoot");
+        //yield return new WaitUntil(() => (!playerAnimator.GetCurrentAnimatorStateInfo(1).IsName("shoot")));
+        yield return new WaitForSeconds(shootTime);
+        vfxMuzzleFlash.Play();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -94,9 +119,12 @@ public class ThirdPersonCotroller : MonoBehaviour
         }
 
         //Para disparar
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") || Input.GetAxis("Shoot") == 1)
         {
-            playerAnimator.SetTrigger("shoot");
+            StopAllCoroutines(); 
+            StartCoroutine("IsShootingWait");
+            StartCoroutine("PlayShootVFX");
+            //isShooting = true;
         }
 
         //Debug.Log("Capsule collider = " + capsuleCollider.height + "\n Base Height = " + baseHeight + "\n HeightCollider = " + heightCollider);
@@ -113,11 +141,15 @@ public class ThirdPersonCotroller : MonoBehaviour
 
         //angle between player and camera
         float angle = Vector3.Angle(playerTarget.transform.forward, transform.forward);
+            
+        float controllerX = Input.GetAxis("Controller X");
+        //Debug.Log("X pos controller = " + controllerX);
         
         //Rotar camera con mouse
         if(Input.GetAxis("Vertical") != 0)
         {
-            transform.Rotate(0, Input.GetAxis("Controller X") * controlSensX, 0);
+            if(controllerX > controlDeadZoneX || controllerX < controlDeadZoneX * -1)
+                transform.Rotate(0, controllerX * controlSensX, 0);
             //centrar la camara
             if (angle > maxAngle)
             {
@@ -134,10 +166,15 @@ public class ThirdPersonCotroller : MonoBehaviour
         else
         {
             playerTarget.transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensX, 0);
-            playerTarget.transform.Rotate(0, Input.GetAxis("Controller X") * controlSensX, 0);
+            playerTarget.transform.Rotate(0, controllerX * controlSensX, 0);
         }
 
-        //playerTarget.transform.Rotate(0, 0, Input.GetAxis("Mouse Y") * mouseSensY);
+        float controllerY = Input.GetAxis("Controller Y") * -1f;
+        //Debug.Log("Y pos controller = " + controllerY);
+
+        lookTarget.transform.position += new Vector3(0, Input.GetAxis("Mouse Y") * mouseSensY, 0);
+        if (controllerY > controlDeadZoneY || controllerY < controlDeadZoneY * -1)
+            lookTarget.transform.position += new Vector3(0, controllerY * controlSensY, 0);
 
         //Para rotar al jugador
         if (playerAnimator.GetFloat("speed") == 0 && horizontal != 0)
