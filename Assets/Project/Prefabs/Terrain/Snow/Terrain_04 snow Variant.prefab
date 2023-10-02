@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain_04 snow Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2837204545877048003, guid: 6f93fb4c9019a4d4d9f3d9dc8d19b882, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3176188015482478713, guid: 6f93fb4c9019a4d4d9f3d9dc8d19b882, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

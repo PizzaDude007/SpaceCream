@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1744816568471521772}
   - component: {fileID: 4288107660464673799}
   - component: {fileID: 3377780342016574351}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrain_14_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5870712213332635185}
   - component: {fileID: 4465808495963381265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
