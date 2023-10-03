@@ -11,11 +11,15 @@ PrefabInstance:
     - target: {fileID: 8008813126653690032, guid: 4d55ecae0a3404f41a5c5637bf5c1c8c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 319f4fb34ab843643b4d0f5034303685, type: 2}
+      objectReference: {fileID: 2100000, guid: 10a52ad1a6d7e5a4fb169753e455178d, type: 2}
     - target: {fileID: 8008813126653690032, guid: 4d55ecae0a3404f41a5c5637bf5c1c8c, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 319f4fb34ab843643b4d0f5034303685, type: 2}
+      objectReference: {fileID: 2100000, guid: 10a52ad1a6d7e5a4fb169753e455178d, type: 2}
+    - target: {fileID: 8008813126653690032, guid: 4d55ecae0a3404f41a5c5637bf5c1c8c, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8280ce889e323a04f8a1f356015ad084, type: 2}
     - target: {fileID: 8369369720897560933, guid: 4d55ecae0a3404f41a5c5637bf5c1c8c, type: 3}
       propertyPath: m_Name
       value: Terrain_03_snow Variant
