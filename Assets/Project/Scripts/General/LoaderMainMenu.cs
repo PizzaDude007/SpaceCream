@@ -8,10 +8,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using Random = UnityEngine.Random;
+using UnityEngine.EventSystems;
 
 public class LoaderMainMenu : MonoBehaviour
 {
     public static LoaderMainMenu Instance;
+
+    public GameObject pauseFirstButton, optionsFirstButton, menuFirstButton, optionsClosedButton;
 
     public GameObject panelMenu;
     public GameObject panelOpciones;
@@ -83,7 +86,14 @@ public class LoaderMainMenu : MonoBehaviour
     void Update()
     {
         if (SceneManager.GetActiveScene().name.Equals("menu_space"))
+        {
+            if(EventSystem.current.currentSelectedGameObject == null)
+            {
+                EventSystem.current.SetSelectedGameObject(null);
+                EventSystem.current.SetSelectedGameObject(menuFirstButton);
+            }
             return;
+        }
         
         if ((Input.GetKeyDown(KeyCode.Escape) || !Application.isFocused) && !open)
         {
@@ -124,7 +134,10 @@ public class LoaderMainMenu : MonoBehaviour
     public void ReturnToGame()
     {
         open = false;
-        DesactivarPaneles();
+        if (SceneManager.GetActiveScene().name == "menu_space")
+            ShowMenu();
+        else
+            DesactivarPaneles();
         Time.timeScale = 1f;
     }
 
@@ -133,6 +146,9 @@ public class LoaderMainMenu : MonoBehaviour
         DesactivarPaneles();
         panelOpciones.SetActive(true);
         OpcionesGenerales();
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(optionsFirstButton);
     }
 
     public void ShowMenu()
@@ -145,12 +161,18 @@ public class LoaderMainMenu : MonoBehaviour
         }
         DesactivarPaneles();
         panelMenu.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(menuFirstButton);
     }
 
     public void ShowPause()
     {
         DesactivarPaneles();
         panelPausa.SetActive(true);
+
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseFirstButton);
     }
 
     public void ExitGame()

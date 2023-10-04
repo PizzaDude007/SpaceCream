@@ -46,16 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxAudioSource: {fileID: 8264931391214365069}
+  ambientAudioSource: {fileID: 0}
   sfxClips:
   - {fileID: 0}
   music:
   - {fileID: 8300000, guid: 8530e928642189047961113eac58afc0, type: 3}
-  ambiental:
-  - {fileID: 8300000, guid: a296452ab9f205c4896eaa789a62445c, type: 3}
-  - {fileID: 8300000, guid: 5b535b781fbf6e449802b0a087dc3247, type: 3}
-  - {fileID: 8300000, guid: eb863a772143687428819794c771f536, type: 3}
-  - {fileID: 8300000, guid: 165292c87f9b7214a9b4c15b3d24335d, type: 3}
-  - {fileID: 8300000, guid: ffd9c343eb811a945a70898be5105ff9, type: 3}
+  ambient: []
+  snowRun: []
+  sandRun: []
+  bulletShot: {fileID: 8300000, guid: becc2c54d6563664db1ec3e5c0000130, type: 3}
+  runVolume: 0.3
 --- !u!82 &8264931391214365069
 AudioSource:
   m_ObjectHideFlags: 0

@@ -35,6 +35,8 @@ public class ThirdPersonCotroller : MonoBehaviour
     private bool isRunning;
     
     private VisualEffect vfxMuzzleFlash;
+    private Transform bulletBarrel;
+    public GameObject bulletPrefab;
     public bool isShooting = false;
 
     // Start is called before the first frame update
@@ -54,6 +56,7 @@ public class ThirdPersonCotroller : MonoBehaviour
         //StartCoroutine(PlayRunSound());
 
         vfxMuzzleFlash = GetComponentInChildren<VisualEffect>();
+        bulletBarrel = vfxMuzzleFlash.gameObject.transform;
     }
 
     private void FixedUpdate()
@@ -100,7 +103,16 @@ public class ThirdPersonCotroller : MonoBehaviour
         playerAnimator.SetTrigger("shoot");
         //yield return new WaitUntil(() => (!playerAnimator.GetCurrentAnimatorStateInfo(1).IsName("shoot")));
         yield return new WaitForSeconds(shootTime);
+        shootBullet();
         vfxMuzzleFlash.Play();
+    }
+
+    public void shootBullet()
+    {
+        SoundFxManager.Instance.Shoot();
+        GameObject bullet = Instantiate(bulletPrefab, bulletBarrel.position, bulletBarrel.rotation);
+        bullet.transform.LookAt(lookTarget.transform.position);
+        bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 1000f);                                
     }
 
     // Update is called once per frame
