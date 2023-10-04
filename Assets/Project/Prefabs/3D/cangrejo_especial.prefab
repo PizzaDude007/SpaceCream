@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 146106228899921406}
-  m_Layer: 0
+  - component: {fileID: 5888774829565607121}
+  m_Layer: 8
   m_Name: pierna_TI_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +33,29 @@ Transform:
   - {fileID: 7633014964835423609}
   m_Father: {fileID: 4197361040842866193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5888774829565607121
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242916643130752}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 1.4
+  m_Direction: 0
+  m_Center: {x: -0.38, y: 0, z: 0}
 --- !u!1 &114668948210466623
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4918506118336539077}
   - component: {fileID: 8847114585437473478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder099
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1979391517961214864}
   - component: {fileID: 2252558798980668688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder080
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3071984477977763426}
   - component: {fileID: 7371727692237822032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6694445412429516772}
   - component: {fileID: 5729859665002625413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder096
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -386,7 +410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8475597171207640620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cuadrupedo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 55950322337465720}
   - component: {fileID: 3776716501930111902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5113475832278128074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5188109633445925360}
   - component: {fileID: 9181178530068500459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 458575874570375322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5746009944817645769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_frente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,7 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8524059979796583820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4318458536815325837}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1179578586783146746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7245100562508335708}
   - component: {fileID: 6055079308512996324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5733431138734394945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5279430218372740181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2346896160747138290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341219781986078815}
   - component: {fileID: 351567086841995386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8317041967830581368}
   - component: {fileID: 8353156314672812922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder111
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8815692345731513952}
   - component: {fileID: 3552671107385659910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TD_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1177,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -1173,7 +1197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205694369477579191}
   - component: {fileID: 8319775230992779939}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2027882861337640499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cader_tras_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002925336234024252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1323,7 +1347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8706677131056475308}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_frente_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1357,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2878860952270483289}
   - component: {fileID: 4629178169488987252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder070
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4609079444693730579}
   - component: {fileID: 9033756575180459991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder091
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47850635514790180}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1561,7 +1585,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4472835112059284731}
   - component: {fileID: 2681867635201147135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,7 +1675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7941213806773734213}
   - component: {fileID: 6818789691160690472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1737,7 +1761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877746541296016677}
   - component: {fileID: 2900168212394814494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5390412551768057486}
   - component: {fileID: 5248987823893808737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder073
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1909,7 +1933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5867775487417188834}
   - component: {fileID: 7471746253524921958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder113
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +2018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4197361040842866193}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2027,7 +2051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7966992097254964134}
   - component: {fileID: 995181726444048062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder102
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2113,7 +2137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7829782861339189049}
   - component: {fileID: 5420982555905227248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder108
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2198,7 +2222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8231649871526827496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2230,7 +2254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8283075378619644208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierta_TD_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,7 +2286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4504922694511780888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2294,7 +2318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7597829117984443934}
   - component: {fileID: 7577458090680757681}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder087
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2379,7 +2403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 231425858488799309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2410,7 +2434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1184645501641515722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piernta_TD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2443,7 +2467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7181826024864431175}
   - component: {fileID: 8121163469179277149}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2529,7 +2553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4055636955945435840}
   - component: {fileID: 9191598947346926030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2639,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2871145148638492016}
-  m_Layer: 0
+  - component: {fileID: 8258679103273997134}
+  m_Layer: 8
   m_Name: colmillo_izq_punta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2637,6 +2662,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6430780215830667734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8258679103273997134
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2157118165033874617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.9
+  m_Direction: 0
+  m_Center: {x: 0.31, y: 0, z: 0.03}
 --- !u!1 &2210060517526482932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2646,7 +2694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7633014964835423609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2678,7 +2726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3909218642317178724}
   - component: {fileID: 2612075742642061259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2766,7 +2814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7111996496775130068}
   - component: {fileID: 8350356383437923596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2851,7 +2899,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110674116436307942}
-  m_Layer: 0
+  - component: {fileID: 8278453181901855056}
+  m_Layer: 8
   m_Name: pierna_TI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2874,6 +2923,29 @@ Transform:
   - {fileID: 6237535616699220189}
   m_Father: {fileID: 2027882861337640499}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8278453181901855056
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2325072618573021862}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.47
+  m_Height: 1.91
+  m_Direction: 0
+  m_Center: {x: -0.3, y: 0, z: 0}
 --- !u!1 &2408382323390940020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2883,7 +2955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1478721806927153716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2915,7 +2987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7704637055359202040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2948,7 +3020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7893582757648332621}
   - component: {fileID: 8956820128098586924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3038,7 +3110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3092728246100214680}
   - component: {fileID: 8797165470168987621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3123,7 +3195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6028053352875642883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8187501366604231694}
   - component: {fileID: 9168453330219337240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_frente_medio_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3245,7 +3317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2752486347188540837}
   - component: {fileID: 7170900298664275391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3330,7 +3402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4726190551738633355}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3362,7 +3434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5918396386192757661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_medio_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3395,7 +3467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2671748425902305207}
   - component: {fileID: 606496284720890342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_tras_medio_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3486,7 +3558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7994079225036901068}
   - component: {fileID: 6597786195884412007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder092
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3573,7 +3645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975029061129456959}
   - component: {fileID: 1439479717969904763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3659,7 +3731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2427394706514640897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3691,7 +3763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2767506067001707280}
   - component: {fileID: 5238382998610851213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3782,7 +3854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432771992931159399}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frente_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3815,7 +3887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4997206577591144021}
   - component: {fileID: 8727515261840482124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder082
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3900,7 +3972,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8497388909311118494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3932,7 +4004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6176435246523516680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3965,7 +4037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6317876670550958457}
   - component: {fileID: 43149397239761327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4050,7 +4122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4806943291147678388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4082,7 +4154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7279839078212277317}
   - component: {fileID: 7127724108196076164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder065
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4168,7 +4240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8586226050223449253}
   - component: {fileID: 7132742954995501272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4254,7 +4326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3695176213562543895}
   - component: {fileID: 8718944077779567649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder105
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4340,7 +4412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6932139519438267567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_medio_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4372,7 +4444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8870542618033128433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_medio_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4405,7 +4477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2225959377348335968}
   - component: {fileID: 8396942423895775087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder079
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4490,7 +4562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5875640081532971484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4522,7 +4594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4832049496305226901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: animacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4577,7 +4649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 905483182471197819}
   - component: {fileID: 2958011057263297209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder083
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4663,7 +4735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5189397485770390156}
   - component: {fileID: 380759606628852827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ojo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4751,7 +4823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6713905653848460427}
   - component: {fileID: 7368717866598098902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4837,7 +4909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7421072006195744214}
   - component: {fileID: 6107530098627241156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4923,7 +4995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218177292344139375}
   - component: {fileID: 329378061857755278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5081,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5852965705243413537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rectangle001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5040,7 +5112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9077793635026723593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5072,7 +5144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018299333550178438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5104,7 +5176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1362550223063404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5137,7 +5209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1324183386236409174}
   - component: {fileID: 7382437208770551845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder066
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5223,7 +5295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8344027501030261616}
   - component: {fileID: 2428650153493816717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5309,7 +5381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21158836820041270}
   - component: {fileID: 5267568617280359959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ojo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5397,7 +5469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4249972865074154978}
   - component: {fileID: 4681937961232244565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5483,7 +5555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 117603501678440622}
   - component: {fileID: 4107208218398292067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder095
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5571,7 +5643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052962864918381247}
   - component: {fileID: 6328191936508983175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5626,7 +5698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1078013252830118711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: picos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5754,7 +5826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6430780215830667734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5786,7 +5858,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8560842346630854950}
-  m_Layer: 0
+  - component: {fileID: 2330806836254570365}
+  m_Layer: 8
   m_Name: central_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5811,6 +5884,29 @@ Transform:
   - {fileID: 1693284713549771528}
   m_Father: {fileID: 7955252118189513954}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2330806836254570365
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162212634717167281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.48
+  m_Height: 4.51
+  m_Direction: 2
+  m_Center: {x: -0.32, y: 0, z: -0.18}
 --- !u!1 &4212261561837261702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5821,7 +5917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7500886054591036203}
   - component: {fileID: 991334712052344151}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5907,7 +6003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7349541601881665205}
   - component: {fileID: 5372484953878341115}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5992,7 +6088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3532737075760330785}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6024,7 +6120,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693284713549771528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6057,7 +6153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889026142065088098}
   - component: {fileID: 5469875545433689960}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder071
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6143,7 +6239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157222196388833321}
   - component: {fileID: 5477594855662309507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder088
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6228,7 +6324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2969225213356887595}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6259,7 +6355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 300277592979190315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6292,7 +6388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5798380842747487573}
   - component: {fileID: 4450622471432543579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6381,7 +6477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2636813952445645203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piera_TD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6413,7 +6509,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3684489287612417867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6446,7 +6542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1072096571966946311}
   - component: {fileID: 4580339069810946605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6536,7 +6632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8353408952203381597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6567,7 +6663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5791455890366994342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6599,7 +6695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7480491439061739606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_medio_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6632,7 +6728,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7830885717237396979}
   - component: {fileID: 2191372986955160899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6718,7 +6814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872323055932273685}
   - component: {fileID: 6384532458496102091}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6804,7 +6900,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6619436759298572899}
-  m_Layer: 0
+  - component: {fileID: 4710208223115579819}
+  m_Layer: 8
   m_Name: colmillo_der_punta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6826,6 +6923,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2018299333550178438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4710208223115579819
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064324651265337559}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.9
+  m_Direction: 0
+  m_Center: {x: 0.31, y: 0, z: 0.03}
 --- !u!1 &5098420129625038342
 GameObject:
   m_ObjectHideFlags: 0
@@ -6835,7 +6955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4185946182789499345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6867,7 +6987,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6237535616699220189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6900,7 +7020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2664834010719026866}
   - component: {fileID: 7329019710394577821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder068
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6986,7 +7106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3735928256859636068}
   - component: {fileID: 5388416499364321191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder072
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7073,7 +7193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4245103025420272879}
   - component: {fileID: 5802198752553923562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7160,7 +7280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690115401457438466}
   - component: {fileID: 6234477087751330810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder090
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7246,7 +7366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5778584033120145825}
   - component: {fileID: 7629297907055219375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerpo_caparazon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7345,7 +7465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365022695214889671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_frente_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7378,7 +7498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469883107930731644}
   - component: {fileID: 7410656750920103566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder085
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7464,7 +7584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7556841930422915509}
   - component: {fileID: 5082386391027182651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder089
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7550,7 +7670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6512278440902052214}
   - component: {fileID: 2595939399811716816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7636,7 +7756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6321484747656513204}
   - component: {fileID: 5835771021825130090}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder093
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7721,7 +7841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5014162357968116148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7753,7 +7873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8726800465124318576}
   - component: {fileID: 6767203181941927866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder106
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7838,7 +7958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185244558524706626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7870,7 +7990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 28125881546543441}
   - component: {fileID: 9132052890834848150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7955,7 +8075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218579956175539508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7987,7 +8107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659362289543807756}
   - component: {fileID: 8607397017343644847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8074,7 +8194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2913943795562877044}
   - component: {fileID: 1390932847269305848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8159,7 +8279,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4478191461729532314}
-  m_Layer: 0
+  - component: {fileID: 9049055953666896720}
+  m_Layer: 8
   m_Name: pierna_TI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8182,6 +8303,29 @@ Transform:
   - {fileID: 4197361040842866193}
   m_Father: {fileID: 6237535616699220189}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &9049055953666896720
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5896357792795851371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 1.78
+  m_Direction: 0
+  m_Center: {x: -0.24, y: 0, z: 0}
 --- !u!1 &5972178487461252884
 GameObject:
   m_ObjectHideFlags: 0
@@ -8191,7 +8335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5130654146961814513}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8223,7 +8367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9035212968580586331}
   - component: {fileID: 7393825173437549221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8308,7 +8452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303383550530345805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8339,7 +8483,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985706195977524184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8370,7 +8514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7104252023527503536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8402,7 +8546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4498535682403321006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8433,7 +8577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7791825224439672565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8468,7 +8612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 791405072135016842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8500,7 +8644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3133956872287928239}
   - component: {fileID: 3115619304124869548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder112
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8587,7 +8731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7900560583557647026}
   - component: {fileID: 2137014067865684661}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8672,7 +8816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838434825643765950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8704,7 +8848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142622418157615644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8736,7 +8880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6992535201339623024}
   - component: {fileID: 6933237166259389389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8823,7 +8967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4384719994114467699}
   - component: {fileID: 520499196870357265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8908,7 +9052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7516035219795158514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8941,7 +9085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434962683373270668}
   - component: {fileID: 7180596438794454662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9027,7 +9171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2746494310473104664}
   - component: {fileID: 8825100657758349694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9115,7 +9259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7034399158835177340}
   - component: {fileID: 390382522057743920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9202,7 +9346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1100850070487704216}
   - component: {fileID: 1277166850817968993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder107
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9287,7 +9431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3894858697251455301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9319,7 +9463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 260984271326347892}
   - component: {fileID: 4957900767916053038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piernta_TD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9355,7 +9499,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -9375,7 +9519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192796121311775923}
   - component: {fileID: 1939680945022978909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder084
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9462,7 +9606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3828922976362368074}
   - component: {fileID: 330641967316641082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9549,7 +9693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8088758769515064505}
   - component: {fileID: 5811404284465045919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9635,7 +9779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8235367727612219019}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9667,7 +9811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577738103375591175}
   - component: {fileID: 8953887481547628772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9754,7 +9898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5104402902248453825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_tras_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9787,7 +9931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2067343056364999863}
   - component: {fileID: 9055680198831191203}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9873,7 +10017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8245964756578555405}
   - component: {fileID: 4192527048121210591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder098
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9958,7 +10102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4467060159789894964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9990,7 +10134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 356542135425020794}
   - component: {fileID: 8161445919095015528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10076,7 +10220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3741062532872131153}
   - component: {fileID: 1157873433343273067}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10161,7 +10305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9217056781769547717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10193,7 +10337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5607933636650107324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10225,7 +10369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7122398522123737373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10256,7 +10400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1482881485810025590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10287,7 +10431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5139724815415913028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: patas_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10323,7 +10467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9172153051474347884}
   - component: {fileID: 2964813945168395927}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10408,7 +10552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6867751392467130887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10444,7 +10588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1761530489453259051}
   - component: {fileID: 6035751106645637309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerpo_bajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10535,7 +10679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5795973692500942389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10568,7 +10712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7790053484728884928}
   - component: {fileID: 8738244526625927565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10654,7 +10798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3142216127321464339}
   - component: {fileID: 6319397903181632407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder086
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10740,7 +10884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6286538611766044813}
   - component: {fileID: 5171017826156841721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10832,7 +10976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5540318530051232735}
   - component: {fileID: 2874503153839468930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10919,7 +11063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6347485203328823629}
   - component: {fileID: 6192423722744985302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder069
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11005,7 +11149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4956323749553034172}
   - component: {fileID: 3552630115955808444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11090,7 +11234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3738783014647941476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11123,7 +11267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2553241665247086751}
   - component: {fileID: 1570209446811879139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11209,7 +11353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2706660480144935480}
   - component: {fileID: 4689087379352039524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11295,7 +11439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917962138000276245}
   - component: {fileID: 1196310794503031336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder094
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11381,7 +11525,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8607493981077961142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11414,7 +11558,7 @@ GameObject:
   m_Component:
   - component: {fileID: 591207896979234748}
   - component: {fileID: 7991632956244216902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11501,7 +11645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5226831379574053761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: patas_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11536,7 +11680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7955252118189513954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11569,7 +11713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5846362161964639811}
   - component: {fileID: 5163351968333156052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11656,7 +11800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7744118682652733203}
   - component: {fileID: 7085001470423540883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11746,7 +11890,7 @@ GameObject:
   - component: {fileID: 4042861354825389415}
   - component: {fileID: 8066203256680045735}
   - component: {fileID: 7935975228347710534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cangrejo_especial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11871,7 +12015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7227201864223148121}
   - component: {fileID: 5052711653840062385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11957,7 +12101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6265441921993047949}
   - component: {fileID: 2635969649620773133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12044,7 +12188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6807006026871919616}
   - component: {fileID: 2338655536382119467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12129,7 +12273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423140796243576604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TD_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12161,7 +12305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3633773465792648935}
   - component: {fileID: 2931095589025897932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder097
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12247,7 +12391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2801516730662889733}
   - component: {fileID: 8624449443179307443}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12333,7 +12477,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7734398969046147410}
   - component: {fileID: 3891417045230614464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerno_frente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12422,7 +12566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3534410266982264062}
   - component: {fileID: 47808811711523292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12508,7 +12652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5669611909627028369}
   - component: {fileID: 8146573005587321815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12594,7 +12738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 824868010969509949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12626,7 +12770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5507667855696161019}
   - component: {fileID: 6972764217416897284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder104
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12712,7 +12856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3527909331755578883}
   - component: {fileID: 1233968690164806063}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder077
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12798,7 +12942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3093902956970245810}
   - component: {fileID: 2850952289570826173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder064
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12885,7 +13029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 973916124911046501}
   - component: {fileID: 5414941019057410493}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder081
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12972,7 +13116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8345871585283940306}
   - component: {fileID: 2234886549693310617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder109
   m_TagString: Untagged
   m_Icon: {fileID: 0}

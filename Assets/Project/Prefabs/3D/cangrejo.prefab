@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8191654148212484749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4258892034120731638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7010969456003158053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piera_TD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4970541537400093450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1443160615070198954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_medio_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1793028239911847613}
-  m_Layer: 0
+  - component: {fileID: 6841901146986111842}
+  m_Layer: 8
   m_Name: colmillo_izq_punta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,6 +191,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7123272358326954822}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6841901146986111842
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292011619850407746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.9
+  m_Direction: 0
+  m_Center: {x: 0.34, y: 0, z: 0}
 --- !u!1 &292789738130273152
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69642726753750104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2380777307571256278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395031782250976753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019015643874039521}
   - component: {fileID: 5422083403269376734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3528354216125227963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4349263665052381772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3953798906372816316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3237995382604566468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5454338904572343094}
   - component: {fileID: 3419994670953956074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TD_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +535,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -531,7 +555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4261600157605357071}
   - component: {fileID: 1033590975691518750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5824504609733155450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,7 +643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6927243851889858563}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_medio_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +675,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1809973985128702113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4010590263904047175}
   - component: {fileID: 6247096900257871819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerno_frente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +799,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7147062743052952761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -806,7 +830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7628406869938080225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5328552862085929837}
   - component: {fileID: 1716835866146654671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_tras_medio_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6352924787387135215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452368786672326434}
   - component: {fileID: 2229020620319300759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3547726062313931556}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1531973646534595626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_frente_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688201349304086286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1173,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7016411710033583514}
-  m_Layer: 0
+  - component: {fileID: 4902155357316693413}
+  m_Layer: 8
   m_Name: pierna_TI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1172,6 +1197,29 @@ Transform:
   - {fileID: 5055736944412175490}
   m_Father: {fileID: 3883537106936212988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4902155357316693413
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2256799191962020881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 1.78
+  m_Direction: 0
+  m_Center: {x: -0.24, y: 0, z: 0}
 --- !u!1 &2308505375932590094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1229,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6614979739516450464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 283689321604227839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1245,7 +1293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8072201804533315576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1277,7 +1325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5265261104836970834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TD_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6321227212465228880}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1340,7 +1388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1326320856839779961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_3_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1372,7 +1420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8940012664291084431}
   - component: {fileID: 1555663952178992945}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ojo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1459,7 +1507,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7710468355239905415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1492,7 +1540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2383486176005197715}
   - component: {fileID: 4062467052982486844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ojo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053291719927964172}
   - component: {fileID: 2067695651595904957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1669,7 +1717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5682571007986650392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: patas_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1704,7 +1752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4280147146109586737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1784,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1132335087878912394}
-  m_Layer: 0
+  - component: {fileID: 8492255331718447436}
+  m_Layer: 8
   m_Name: colmillo_der_punta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,6 +1807,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 172075773753820737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8492255331718447436
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563538842382473310}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Height: 0.9
+  m_Direction: 0
+  m_Center: {x: 0.31, y: 0, z: 0.03}
 --- !u!1 &3563746931283996603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2462618867786614910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_frente_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1800,7 +1872,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2972981749120035982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5602334429292751221}
   - component: {fileID: 3918938122634885729}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4235455723695921754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1952,7 +2024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6796538751854477595}
   - component: {fileID: 8109169607137898196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2043,7 +2115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6106213244439900738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2075,7 +2147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8267771986360831322}
   - component: {fileID: 6617933498272853546}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_frente_medio_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,7 +2236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4708775522707660134}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2196,7 +2268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3130280215553752550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2228,7 +2300,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919923769038962620}
   - component: {fileID: 6944654624007975394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerpo_bajo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2320,7 +2392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5717182406348217663}
   - component: {fileID: 5585774400699824191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piernta_TD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2356,7 +2428,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2375,7 +2447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6071368516057742953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2408,7 +2480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 876114845452326579}
   - component: {fileID: 2403090656300139124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2498,7 +2570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1456513353018512437}
   - component: {fileID: 7374053680749189302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cuerpo_caparazon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2597,7 +2669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7163725680704649464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2628,7 +2700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 35188721871405517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_tras_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2661,7 +2733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 708574224785680318}
   - component: {fileID: 4016539097636190254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2751,7 +2823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7657542072464612544}
   - component: {fileID: 2477413402200985999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pata_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2843,7 +2915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8557133273173892770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: animacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2897,7 +2969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4183101322162057672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2929,7 +3001,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4838645778140077486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: frente_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +3033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3275184552206112972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +3065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7504634246714102072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3024,7 +3096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 166820839925693081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3055,7 +3127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6532412509112495655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3086,7 +3158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5530745826602117220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3117,7 +3189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3432352357866304862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piernta_TD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3150,7 +3222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498623600748149652}
   - component: {fileID: 4018998064109778549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3237,7 +3309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306051753720040983}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3268,7 +3340,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1686133096484105475}
-  m_Layer: 0
+  - component: {fileID: 2016774884971052504}
+  m_Layer: 8
   m_Name: pierna_TI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3291,6 +3364,29 @@ Transform:
   - {fileID: 3883537106936212988}
   m_Father: {fileID: 3389211660452412106}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &2016774884971052504
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408793049281584427}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.47
+  m_Height: 1.91
+  m_Direction: 0
+  m_Center: {x: -0.3, y: 0, z: 0}
 --- !u!1 &6432091304107622904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3363396498478330367}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FMD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8845679483915324430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3363,7 +3459,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5055736944412175490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3395,7 +3491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1905265751790149122}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3426,7 +3522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3846469749901084195}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_frente_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3463,7 +3559,7 @@ GameObject:
   - component: {fileID: 4584044429273482093}
   - component: {fileID: 7960753610975836900}
   - component: {fileID: 6789675171858258309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cangrejo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3608,7 +3704,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1731561047704761631}
-  m_Layer: 0
+  - component: {fileID: 8159894140314215229}
+  m_Layer: 8
   m_Name: pierna_TI_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3631,6 +3728,29 @@ Transform:
   - {fileID: 1326320856839779961}
   m_Father: {fileID: 5055736944412175490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &8159894140314215229
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6720070296496283548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.35
+  m_Height: 1.4
+  m_Direction: 0
+  m_Center: {x: -0.38, y: 0, z: 0}
 --- !u!1 &6728671214931576857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,7 +3760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2670830506923439350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: patas_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3675,7 +3795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3389211660452412106}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cader_tras_izq_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3707,7 +3827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1685783689047067015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3739,7 +3859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4285445925542092949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3771,7 +3891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2531084533713776543}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3802,7 +3922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595906142130194227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_medio_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3835,7 +3955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6218349885630299673}
   - component: {fileID: 5993194866498878010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3890,7 +4010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4059144173633435974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_2_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3921,7 +4041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 694028638705166974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: central_frente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3953,7 +4073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1516702964636132466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierta_TD_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3985,7 +4105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7123272358326954822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4017,7 +4137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2662168302494854982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rectangle001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4048,7 +4168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5860563554771722518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cuadrupedo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4088,7 +4208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8014555397215221574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4120,7 +4240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5258076543985763223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4152,7 +4272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6747426350459358117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MFI_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4184,7 +4304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 172075773753820737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: colmillo_der
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4216,7 +4336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5828221167792387099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4247,7 +4367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7033684332120007186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_FD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4279,7 +4399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8674415129626936756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4311,7 +4431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6506010351098748412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4342,7 +4462,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8603842073044198449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_tras_medio_der_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4374,7 +4494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4354094968973258603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cadera_medio_tras_izq
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4406,7 +4526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3479839167800177459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TMD_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4438,7 +4558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5708356102464560709}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4470,7 +4590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2779358779769165386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4501,7 +4621,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3883537106936212988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_TI_1_union
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4533,7 +4653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5169101787721899218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4564,7 +4684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8803371130161720278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pierna_MTI_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
