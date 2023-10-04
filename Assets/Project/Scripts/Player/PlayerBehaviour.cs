@@ -21,7 +21,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-                Destroy(this.gameObject);
+            Destroy(this.gameObject);
         else
             Instance = this;
     }
@@ -95,6 +95,12 @@ public class PlayerBehaviour : MonoBehaviour
         {
             playerData.lives --;
             playerData.health = 100;
+            HUDController.Instance.UpdateLives();
+        }
+        if(playerData.lives <= 0)
+        {
+            Debug.Log("Game Over");
+            SceneManager.LoadScene("ice_cream_shop");
         }
     }
 

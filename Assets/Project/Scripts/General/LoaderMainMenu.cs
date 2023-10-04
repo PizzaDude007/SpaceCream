@@ -95,13 +95,13 @@ public class LoaderMainMenu : MonoBehaviour
             return;
         }
         
-        if ((Input.GetKeyDown(KeyCode.Escape) || !Application.isFocused) && !open)
+        if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7) || !Application.isFocused) && !open)
         {
             open = true;
             ShowPause();
             Time.timeScale = 0f;
         } 
-        else if (Input.GetKeyDown(KeyCode.Escape) && open)
+        else if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7)) && open)
         {
             ReturnToGame();
         }

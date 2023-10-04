@@ -11890,6 +11890,7 @@ GameObject:
   - component: {fileID: 4042861354825389415}
   - component: {fileID: 8066203256680045735}
   - component: {fileID: 7935975228347710534}
+  - component: {fileID: -8660094425547035570}
   m_Layer: 8
   m_Name: cangrejo_especial
   m_TagString: Untagged
@@ -12005,6 +12006,18 @@ MonoBehaviour:
   waitToChase: 2
   waitToAttack: 1
   agent: {fileID: 8066203256680045735}
+--- !u!114 &-8660094425547035570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619299784750985194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7611f923d9c278845bffe4355859f31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8726795837091363572
 GameObject:
   m_ObjectHideFlags: 0

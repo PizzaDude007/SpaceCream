@@ -11,27 +11,35 @@ public class BulletBehaviour : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if(gameObject.transform.position.y <= 0.1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision != null) {             
-            if (collision.gameObject.tag == "Enemy")
+            if (collision.gameObject.layer == 8) //Layer 8 = Enemy
             {
                 collision.gameObject.GetComponent<EnemyBehaviour>().TakeDamage(30);
                 Debug.Log("Enemy hit");
                 Destroy(gameObject);
             }
-            else if (collision.gameObject.tag == "Player")
+            else if (collision.gameObject.layer == 6) //Layer 6 = Player
             {
                 collision.gameObject.GetComponent<PlayerBehaviour>().TakeDamage(10);
                 Destroy(gameObject);
             }
-            else if (collision.gameObject.tag == "Floor")
+            else if (collision.gameObject.layer == 7) //Layer 7 = Floor
             {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("Hit "+collision.gameObject.name+", Layer = "+collision.gameObject.layer);
                 Destroy(gameObject);
             }
         }

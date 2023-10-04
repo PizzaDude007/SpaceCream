@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/level_desert.unity
     guid: 786f755439771ac41ad50017a678c2d1
+  - enabled: 1
+    path: Assets/Project/Scenes/ice_cream_shop.unity
+    guid: 8114470d935fe4543807a5a86b10c805
   m_configObjects: {}
