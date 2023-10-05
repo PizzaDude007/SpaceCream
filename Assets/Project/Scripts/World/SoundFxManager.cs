@@ -11,6 +11,7 @@ public class SoundFxManager : MonoBehaviour
     public AudioClip[] ambient;
     public AudioClip[] snowRun;
     public AudioClip[] sandRun;
+    public AudioClip[] walking;
     public AudioClip bulletShot;
 
     public float runVolume = 0.3f;
@@ -92,6 +93,19 @@ public class SoundFxManager : MonoBehaviour
         //Debug.Log("RunSnow \n");
         //sfxAudioSource.PlayOneShot(snowRun[Random.Range(0, snowRun.Length)], runVolume);
         sfxAudioSource.PlayOneShot(snowRun[Random.Range(0, snowRun.Length)]);
+    }
+
+    public void Walk()
+    {
+        if(sfxAudioSource.isPlaying)
+        {
+            return;
+        }
+
+        sfxAudioSource.Stop();
+        //Debug.Log("Walk \n");
+        //sfxAudioSource.PlayOneShot(walking, runVolume);
+        sfxAudioSource.PlayOneShot(walking[Random.Range(0, walking.Length)]);
     }
 
     public void Shoot()

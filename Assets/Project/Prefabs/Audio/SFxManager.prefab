@@ -48,12 +48,51 @@ MonoBehaviour:
   sfxAudioSource: {fileID: 8264931391214365069}
   ambientAudioSource: {fileID: 0}
   sfxClips:
+  - {fileID: 8300000, guid: 988332b5fc86b6e4c8dcb8bde5ec5f61, type: 3}
   - {fileID: 0}
   music:
   - {fileID: 8300000, guid: 8530e928642189047961113eac58afc0, type: 3}
-  ambient: []
-  snowRun: []
-  sandRun: []
+  ambient:
+  - {fileID: 8300000, guid: a296452ab9f205c4896eaa789a62445c, type: 3}
+  - {fileID: 8300000, guid: eb863a772143687428819794c771f536, type: 3}
+  - {fileID: 8300000, guid: 5b535b781fbf6e449802b0a087dc3247, type: 3}
+  - {fileID: 8300000, guid: ffd9c343eb811a945a70898be5105ff9, type: 3}
+  - {fileID: 8300000, guid: 835ddddb4397cc24b884031168e2bb4f, type: 3}
+  - {fileID: 8300000, guid: 353cd37c45972584390ccf605597587d, type: 3}
+  - {fileID: 8300000, guid: 1c2b83694dc5c2f4db91735b29b7953d, type: 3}
+  snowRun:
+  - {fileID: 8300000, guid: 988332b5fc86b6e4c8dcb8bde5ec5f61, type: 3}
+  - {fileID: 8300000, guid: bf4137634939ae141861d36cc2a42170, type: 3}
+  - {fileID: 8300000, guid: 4ae81f14bccbf9e4f9f60c102fc24516, type: 3}
+  - {fileID: 8300000, guid: 39967a4b3e8cefa4db210469cb2dd81a, type: 3}
+  - {fileID: 8300000, guid: ca63dca853dfe404db8f65b9d27bed22, type: 3}
+  - {fileID: 8300000, guid: d14bb28bf2f10f2438a057bc59faf3c2, type: 3}
+  - {fileID: 8300000, guid: eac2b2b973f74fd44bcfe6e49da3490b, type: 3}
+  - {fileID: 8300000, guid: 0b876a7de30796e4ca543ca9179c4ad3, type: 3}
+  - {fileID: 8300000, guid: 449cc00c93a04554a933b5d28c68b852, type: 3}
+  - {fileID: 8300000, guid: a01d57b925357c04dad30a50337402fb, type: 3}
+  sandRun:
+  - {fileID: 8300000, guid: ae058cd5aa1befb47b17eac766e2e9a4, type: 3}
+  - {fileID: 8300000, guid: 9d4c3df2f17f5264190cb31d5f3462f3, type: 3}
+  - {fileID: 8300000, guid: d1383d97d558d7649afa8d2932200da7, type: 3}
+  - {fileID: 8300000, guid: 60aa25f6575e37540bce238f81feb29f, type: 3}
+  - {fileID: 8300000, guid: a32fdc6becfd17246821a1827fa0eeb4, type: 3}
+  - {fileID: 8300000, guid: f36f311d783a19f4faf3c7d3f41ab41a, type: 3}
+  - {fileID: 8300000, guid: 993d2922bb518d4448f49c7ff2fe60b1, type: 3}
+  - {fileID: 8300000, guid: 48222401e7a7b5b429275680ba91cfa3, type: 3}
+  - {fileID: 8300000, guid: 0c4dad76d11a2434fadba87ee18b92d7, type: 3}
+  - {fileID: 8300000, guid: 5449ba4be363ea04abdf7da393617f67, type: 3}
+  walking:
+  - {fileID: 8300000, guid: 9e30d4a98224ad34c8f0dd86542ca5ba, type: 3}
+  - {fileID: 8300000, guid: b70e5e60f0faa6d4bb427dc6a18317fa, type: 3}
+  - {fileID: 8300000, guid: 6afed6aff6f40cd4cac15e7067ad9760, type: 3}
+  - {fileID: 8300000, guid: b2d5ee2da21bec54fb7113051f387d05, type: 3}
+  - {fileID: 8300000, guid: 8ea916c1c236b884d8d5d0c107e71f17, type: 3}
+  - {fileID: 8300000, guid: 8ea916c1c236b884d8d5d0c107e71f17, type: 3}
+  - {fileID: 8300000, guid: 39ee213cdbcd6884a861d3d724bc1852, type: 3}
+  - {fileID: 8300000, guid: 43b7a6cf98208b44a99b35246f670cb3, type: 3}
+  - {fileID: 8300000, guid: 46de5b0ff91e11c47bebbd4244b2b2f5, type: 3}
+  - {fileID: 8300000, guid: 79c26d1ca751bd94db64817c86ba1a56, type: 3}
   bulletShot: {fileID: 8300000, guid: becc2c54d6563664db1ec3e5c0000130, type: 3}
   runVolume: 0.3
 --- !u!82 &8264931391214365069
@@ -65,7 +104,7 @@ AudioSource:
   m_GameObject: {fileID: 4193165460335900230}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8278199565689859529, guid: 5e0ba1d39fbb08b45a267df0ef800cc3, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1

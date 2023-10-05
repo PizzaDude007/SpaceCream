@@ -44,42 +44,39 @@ public class PlayerBehaviour : MonoBehaviour
         else if (playerData != null)
         {
             player = new Player();
-            player.lives = playerData.lives;
-            player.health = playerData.health;
-            player.maxLevel = playerData.maxLevel;
-            player.currentLevel = playerData.currentLevel;
-            player.levelsCompleted = playerData.levelsCompleted;
-            player.items = playerData.items;
-            player.weapons = playerData.weapons;
-            player.lastSaved = playerData.lastSaved;
-
-            //SavePlayer();
+            UpdatePlayer();
         }
         else
         {
             player = new Player();
             player.lives = 3;
             player.health = 100;
-            player.maxLevel = "";
+            player.maxLevel = "level_desert";
             player.currentLevel = "";
             player.levelsCompleted = new List<int>();
             player.items = new List<GameObject>();
             player.weapons = new List<GameObject>();
-            player.lastSaved = DateTime.Now;
+            player.lastSaved = DateTime.Now.ToShortDateString() + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute;
 
-            //SavePlayer();
+            SavePlayer();
         }
     }
 
     public void SavePlayer()
     {
         string scene = SceneManager.GetActiveScene().name;
+
+        if(scene.Equals("loader") || scene.Equals("main_menu"))
+        {
+            scene = player.maxLevel;
+        }
+
         SavePlayer(scene);
     }
 
     public void SavePlayer(string scene)
     {
-        player.lastSaved = DateTime.Now;
+        player.lastSaved = DateTime.Now.ToShortDateString() +" "+DateTime.Now.Hour+":"+DateTime.Now.Minute;
         player.currentLevel = scene;
 
         playerData.lives = player.lives;
@@ -152,5 +149,5 @@ public class Player
     public List<int> levelsCompleted;
     public List<GameObject> items;
     public List<GameObject> weapons;
-    public DateTime lastSaved;
+    public string lastSaved;
 }

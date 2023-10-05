@@ -13,5 +13,5 @@ public class PlayerData : ScriptableObject
     public List<int> levelsCompleted;
     public List<GameObject> items;
     public List<GameObject> weapons;
-    public DateTime lastSaved;
+    public string lastSaved;
 }

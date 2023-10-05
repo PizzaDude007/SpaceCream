@@ -754,6 +754,7 @@ MonoBehaviour:
     levelsCompleted: 
     items: []
     weapons: []
+    lastSaved: 
   fileName: PlayerData.json
 --- !u!4 &1797857791
 Transform:
@@ -803,10 +804,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SFxManager
       objectReference: {fileID: 0}
-    - target: {fileID: 4193165460335900230, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4739561049602659815, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -848,167 +845,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sfxAudioSource
-      value: 
-      objectReference: {fileID: 2020636916}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
       propertyPath: ambientAudioSource
       value: 
       objectReference: {fileID: 1195230065}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sfxClips.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: a296452ab9f205c4896eaa789a62445c, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: eb863a772143687428819794c771f536, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5b535b781fbf6e449802b0a087dc3247, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: ffd9c343eb811a945a70898be5105ff9, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: 835ddddb4397cc24b884031168e2bb4f, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: 353cd37c45972584390ccf605597587d, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: ambient.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 1c2b83694dc5c2f4db91735b29b7953d, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: ae058cd5aa1befb47b17eac766e2e9a4, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 9d4c3df2f17f5264190cb31d5f3462f3, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: d1383d97d558d7649afa8d2932200da7, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 60aa25f6575e37540bce238f81feb29f, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: a32fdc6becfd17246821a1827fa0eeb4, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: f36f311d783a19f4faf3c7d3f41ab41a, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: 993d2922bb518d4448f49c7ff2fe60b1, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 48222401e7a7b5b429275680ba91cfa3, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c4dad76d11a2434fadba87ee18b92d7, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sandRun.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: 5449ba4be363ea04abdf7da393617f67, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 988332b5fc86b6e4c8dcb8bde5ec5f61, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: bf4137634939ae141861d36cc2a42170, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 4ae81f14bccbf9e4f9f60c102fc24516, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[3]
-      value: 
-      objectReference: {fileID: 8300000, guid: 39967a4b3e8cefa4db210469cb2dd81a, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: ca63dca853dfe404db8f65b9d27bed22, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[5]
-      value: 
-      objectReference: {fileID: 8300000, guid: d14bb28bf2f10f2438a057bc59faf3c2, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[6]
-      value: 
-      objectReference: {fileID: 8300000, guid: eac2b2b973f74fd44bcfe6e49da3490b, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[7]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0b876a7de30796e4ca543ca9179c4ad3, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[8]
-      value: 
-      objectReference: {fileID: 8300000, guid: 449cc00c93a04554a933b5d28c68b852, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: snowRun.Array.data[9]
-      value: 
-      objectReference: {fileID: 8300000, guid: a01d57b925357c04dad30a50337402fb, type: 3}
-    - target: {fileID: 7856835108086470139, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: sfxClips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 988332b5fc86b6e4c8dcb8bde5ec5f61, type: 3}
-    - target: {fileID: 8264931391214365069, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: Loop
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8264931391214365069, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8264931391214365069, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8264931391214365069, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: -8278199565689859529, guid: 5e0ba1d39fbb08b45a267df0ef800cc3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
---- !u!82 &2020636916 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8264931391214365069, guid: 9f6091cc399b4a44da61b440c4fccc24, type: 3}
-  m_PrefabInstance: {fileID: 2020636915}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2070121143
 PrefabInstance:
   m_ObjectHideFlags: 0

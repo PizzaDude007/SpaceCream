@@ -8,22 +8,27 @@ public class DeactivateCanvas : MonoBehaviour
     [SerializeField]
     private GameObject canvas;
 
-    //private bool open;
+    private bool open;
 
     // Start is called before the first frame update
     void Start()
     {
-        //open = false;
+        open = false;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        open = LoaderMainMenu.Instance.open;
 
-        if (SceneManager.GetActiveScene().name.Contains("level") && !LoaderMainMenu.Instance.open) {
-            canvas.SetActive(true);
-        }
-        else
+        //If the scene is not a level, deactivate the canvas
+        if (!SceneManager.GetActiveScene().name.Contains("level")){ 
             canvas.SetActive(false);
+        }//If the scene is a level, and the pause menu is not open, activate the canvas
+        else
+        {
+            canvas.SetActive(!open);
+        }
+      
     }
 }

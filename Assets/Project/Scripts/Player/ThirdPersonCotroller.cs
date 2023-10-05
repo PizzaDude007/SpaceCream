@@ -76,7 +76,7 @@ public class ThirdPersonCotroller : MonoBehaviour
     {
         //if(Input.GetAxis("Vertical") != 0 || playerAnimatorInfo.IsName("runs"))
         //{
-        SoundFxManager.Instance.StopSFX();
+        //SoundFxManager.Instance.StopSFX();
         switch (levelName)
         {
             case "level_snow":
@@ -85,9 +85,12 @@ public class ThirdPersonCotroller : MonoBehaviour
             case "level_desert":
                 SoundFxManager.Instance.RunSand();
                 break;
+            default:
+                SoundFxManager.Instance.Walk();
+                break;
         }
         yield return new WaitForSeconds(soundTime);
-        SoundFxManager.Instance.StopSFX();
+        //SoundFxManager.Instance.StopSFX();
         isRunning = false;
         //}
     }
@@ -134,7 +137,7 @@ public class ThirdPersonCotroller : MonoBehaviour
         }
 
         //Para disparar
-        if (Input.GetButtonDown("Fire1") || Input.GetAxis("Shoot") == 1)
+        if ((Input.GetButtonDown("Fire1") || Input.GetAxis("Shoot") == 1) && SceneManager.GetActiveScene().name.Contains("level"))
         {
             StopAllCoroutines(); 
             StartCoroutine("IsShootingWait");
