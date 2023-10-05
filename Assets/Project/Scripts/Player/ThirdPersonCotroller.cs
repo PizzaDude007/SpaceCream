@@ -39,6 +39,9 @@ public class ThirdPersonCotroller : MonoBehaviour
     public GameObject bulletPrefab;
     public bool isShooting = false;
 
+    public float invulnerableTime = 1f;
+    private bool isInvulnerable = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -200,17 +203,6 @@ public class ThirdPersonCotroller : MonoBehaviour
                 playerTarget.transform.Rotate(0f, -horizontal * counterRotate, 0f);
         }
 
-        //if (Input.GetAxis("Vertical") > 0 && playerTarget.transform.rotation != transform.rotation && angle > maxAngle)
-        //{
-        //    if (playerTarget.transform.rotation.y < transform.rotation.y)
-        //        playerTarget.transform.Rotate(0, 1f * mouseSensX / 5 * Time.deltaTime, 0);
-        //    else
-        //        playerTarget.transform.Rotate(0, -1f * mouseSensX / 5 * Time.deltaTime, 0);
-        //}
-
-
-
-
         //Para saludar
         /*if (Input.GetKeyDown(KeyCode.E))
         {
@@ -221,37 +213,35 @@ public class ThirdPersonCotroller : MonoBehaviour
         timeScale = playerAnimator.GetFloat("TimeScale");
 
         
-        Time.timeScale = timeScale;*/
+        Time.timeScale = timeSc     ale;*/
+
 
         //if (Input.GetKeyDown(KeyCode.G))
         //    playerAnimator.SetTrigger("Grab");
     }
 
-    //Para que el personaje agarre el objeto que se encuentra en el target (calabaza)
-    /*private void OnAnimatorIK(int layerIndex)
+    private void OnCollisionEnter(Collision collision)
     {
-        playerAnimatorInfo = playerAnimator.GetCurrentAnimatorStateInfo(0);
-
-        if (playerAnimatorInfo.IsName("Grab"))
+        if (collision != null)
         {
-            playerAnimator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
-            playerAnimator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
-            playerAnimator.SetIKPosition(AvatarIKGoal.RightHand, targetToGrab.position);
-            playerAnimator.SetIKRotation(AvatarIKGoal.RightHand, targetToGrab.rotation);
-        }
-        else
-        {
-            playerAnimator.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
-            playerAnimator.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
+            if (collision.gameObject.layer == 8 && !isInvulnerable) //Enemy
+            {
+                StartCoroutine("IsInvulnerable");
+                Debug.Log("Enemy " + collision.gameObject.name + " hit Player");
+            }
+            else if(collision.gameObject.layer != 7) //Not floor
+            {
+                Debug.Log("Hit " + collision.gameObject.name + ", Layer = " + collision.gameObject.layer);
+            }
         }
     }
 
-    public void EnableCocktail()
+    IEnumerator IsInvulnerable()
     {
-        cocktail.SetActive(true);
+        isInvulnerable = true;
+        PlayerBehaviour.Instance.TakeDamage(50); 
+        Debug.Log("Player is invulnerable");
+        yield return new WaitForSeconds(invulnerableTime);
+        isInvulnerable = false;
     }
-    public void DisableCocktail()
-    {
-        cocktail.SetActive(false);
-    }*/
 }

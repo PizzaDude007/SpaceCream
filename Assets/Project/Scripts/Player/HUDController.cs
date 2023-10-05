@@ -9,7 +9,10 @@ public class HUDController : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance != null)
+            Destroy(this.gameObject);
+        else
+            Instance = this;
     }
 
     // Start is called before the first frame update
@@ -24,7 +27,7 @@ public class HUDController : MonoBehaviour
         
     }
 
-    void UpdateLives()
+    public void UpdateLives()
     {
         for (int i = 0; i < vidasPanel.transform.childCount; i++)
         {

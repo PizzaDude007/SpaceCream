@@ -8,7 +8,7 @@ public class PlayerData : ScriptableObject
 {
     public int lives = 3;
     public float health = 100;
-    public int maxLevel;
+    public string maxLevel;
     public string currentLevel;
     public List<int> levelsCompleted;
     public List<GameObject> items;

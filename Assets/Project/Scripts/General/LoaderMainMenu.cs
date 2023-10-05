@@ -22,6 +22,8 @@ public class LoaderMainMenu : MonoBehaviour
     public GameObject canvasMenu;
     public GameObject sfxManager;
     public GameObject musicSource;
+    public GameObject PlayerData;
+    public GameObject HUDCanvas;
     public string[] escenas;
     public bool open;
 
@@ -120,6 +122,8 @@ public class LoaderMainMenu : MonoBehaviour
         //DontDestroyOnLoad(panelMenu);
         DontDestroyOnLoad(sfxManager);
         DontDestroyOnLoad(musicSource);
+        DontDestroyOnLoad(PlayerData);
+        DontDestroyOnLoad(HUDCanvas);
     }
 
     public void PlayGame()
@@ -128,7 +132,19 @@ public class LoaderMainMenu : MonoBehaviour
         SoundFxManager.Instance.PlayAmbient();
         open = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(escenas[Random.Range(0, escenas.Length)]);
+        string scene = escenas[Random.Range(0, escenas.Length)];
+        PlayerBehaviour.Instance.SavePlayer(scene);
+        SceneManager.LoadScene(scene);
+    }
+
+    public void ContinueGame()
+    {
+        DesactivarPaneles();
+        SoundFxManager.Instance.PlayAmbient();
+        open = false;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(PlayerBehaviour.Instance.player.currentLevel);
+        Debug.Log("Loading level: " + PlayerBehaviour.Instance.player.currentLevel);
     }
 
     public void ReturnToGame()

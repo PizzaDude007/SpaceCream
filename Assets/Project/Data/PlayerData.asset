@@ -15,7 +15,7 @@ MonoBehaviour:
   lives: 3
   health: 100
   maxLevel: 0
-  currentLevel: 
+  currentLevel: ice_cream_shop
   levelsCompleted: 
   items: []
   weapons: []

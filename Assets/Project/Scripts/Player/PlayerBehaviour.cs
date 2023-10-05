@@ -52,25 +52,35 @@ public class PlayerBehaviour : MonoBehaviour
             player.items = playerData.items;
             player.weapons = playerData.weapons;
             player.lastSaved = playerData.lastSaved;
+
+            //SavePlayer();
         }
         else
         {
             player = new Player();
             player.lives = 3;
             player.health = 100;
-            player.maxLevel = 1;
+            player.maxLevel = "";
             player.currentLevel = "";
             player.levelsCompleted = new List<int>();
             player.items = new List<GameObject>();
             player.weapons = new List<GameObject>();
             player.lastSaved = DateTime.Now;
+
+            //SavePlayer();
         }
     }
 
     public void SavePlayer()
     {
+        string scene = SceneManager.GetActiveScene().name;
+        SavePlayer(scene);
+    }
+
+    public void SavePlayer(string scene)
+    {
         player.lastSaved = DateTime.Now;
-        player.currentLevel = SceneManager.GetActiveScene().name;
+        player.currentLevel = scene;
 
         playerData.lives = player.lives;
         playerData.health = player.health;
@@ -91,17 +101,39 @@ public class PlayerBehaviour : MonoBehaviour
     public void TakeDamage(int damage)
     {
         playerData.health -= damage;
+        Debug.Log("Took Damage, Player health: " + playerData.health);
         if(playerData.health <= 0)
         {
             playerData.lives --;
             playerData.health = 100;
+            player.lives = playerData.lives;
             HUDController.Instance.UpdateLives();
-        }
-        if(playerData.lives <= 0)
+            Debug.Log("Lost one life");
+            
+        } 
+        if (playerData.lives <= 0)
         {
             Debug.Log("Game Over");
+            playerData.maxLevel = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene("ice_cream_shop");
+            playerData.lives = 3;
+            playerData.health = 100;
+            SavePlayer("ice_cream_shop");
         }
+        UpdatePlayer();
+        Debug.Log("Player lives: " + playerData.lives);
+    }
+
+    private void UpdatePlayer()
+    {
+        player.lives = playerData.lives;
+        player.health = playerData.health;
+        player.maxLevel = playerData.maxLevel;
+        player.currentLevel = playerData.currentLevel;
+        player.levelsCompleted = playerData.levelsCompleted;
+        player.items = playerData.items;
+        player.weapons = playerData.weapons;
+        player.lastSaved = playerData.lastSaved;
     }
 
     private void OnApplicationQuit()
@@ -115,7 +147,7 @@ public class Player
 {
     public int lives = 3;
     public float health = 100;
-    public int maxLevel;
+    public string maxLevel;
     public string currentLevel;
     public List<int> levelsCompleted;
     public List<GameObject> items;
