@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 5535281056078311715}
   - component: {fileID: 6413231782626633949}
   - component: {fileID: -7140880700590907301}
+  - component: {fileID: -9140620047945959778}
   m_Layer: 0
   m_Name: hombre Variant
   m_TagString: Player
@@ -877,6 +878,7 @@ MonoBehaviour:
   shootTime: 0.28
   bulletPrefab: {fileID: 3173217195603005073, guid: 961739e68bb820144bc501797c8e1fb6, type: 3}
   isShooting: 0
+  invulnerableTime: 2
 --- !u!114 &6413231782626633949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,6 +905,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5043958449335203702}
   m_Enabled: 1
+--- !u!114 &-9140620047945959778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043958449335203702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6441391371afd77428e6834b9c02dc05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  attackDamage: 0
+  items: []
 --- !u!1 &5060871913435665453
 GameObject:
   m_ObjectHideFlags: 0

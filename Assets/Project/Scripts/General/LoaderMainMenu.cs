@@ -123,7 +123,7 @@ public class LoaderMainMenu : MonoBehaviour
         DontDestroyOnLoad(sfxManager);
         DontDestroyOnLoad(musicSource);
         DontDestroyOnLoad(PlayerData);
-        DontDestroyOnLoad(HUDCanvas);
+        //DontDestroyOnLoad(HUDCanvas);
     }
 
     public void PlayGame()

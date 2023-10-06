@@ -121,6 +121,17 @@ public class PlayerBehaviour : MonoBehaviour
         Debug.Log("Player lives: " + playerData.lives);
     }
 
+    public void Heal(int heal)
+    {
+        if(player.health >= 100)
+        {
+            Debug.Log("Player is already at full health");
+            return;
+        }
+        player.health += heal;
+        playerData.health += heal;
+    }
+
     private void UpdatePlayer()
     {
         player.lives = playerData.lives;

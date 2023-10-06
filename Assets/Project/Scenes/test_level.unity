@@ -3200,7 +3200,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 503
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -3627,6 +3627,18 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 1182824263487680779, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182824263487680779, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.044923477
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182824263487680779, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.001125646
+      objectReference: {fileID: 0}
     - target: {fileID: 2023262394544193196, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3634,6 +3646,18 @@ PrefabInstance:
     - target: {fileID: 2405730681970770534, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632021418770278700, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632021418770278700, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.014294813
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632021418770278700, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0005119953
       objectReference: {fileID: 0}
     - target: {fileID: 2768420124851316484, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_Layer
