@@ -95,6 +95,10 @@ public class HealingAreaItem : Item
                 effect = (GameObject)Resources.Load("ItemEffects/HealingArea", typeof(GameObject));
 
             GameObject healingArea = GameObject.Instantiate(effect, player.transform.position, Quaternion.Euler(Vector3.zero));
+            healingArea.transform.position = new Vector3(healingArea.transform.position.x, healingArea.transform.position.y - 0.7f, healingArea.transform.position.z);
+
+            //Align normal to ground
+            healingArea.transform.rotation = Quaternion.FromToRotation(Vector3.up, player.GetGroundNormal());
             
             intenalCooldown = 10;
         }

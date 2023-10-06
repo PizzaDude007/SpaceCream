@@ -89,4 +89,10 @@ public class PlayerItems : MonoBehaviour
     {
         item.OnPickup(this);
     }
+
+    public Vector3 GetGroundNormal()
+    {
+        PlayerHitbox playerHitbox = gameObject.GetComponent<PlayerHitbox>();
+        return playerHitbox.GetGroundNormal();
+    }
 }
