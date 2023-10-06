@@ -27,10 +27,16 @@ public abstract class Item
     {
 
     }
+
+    public virtual void OnPickup(PlayerItems player)
+    {
+
+    }
 }
 
 public class HealingItem : Item
 {
+    GameObject effect;
     public override string GiveName()
     {
         return "Health Item";
@@ -39,6 +45,20 @@ public class HealingItem : Item
     public override void Update(PlayerItems player, int stacks)
     {
         player.Heal(3 + (2*stacks));  //base = 5, 2 stacks = 9, 3 stacks = 11
+    }
+
+    public override void OnPickup(PlayerItems player)
+    {
+        if (effect == null)
+            effect = (GameObject)Resources.Load("ItemEffects/HealingEffect", typeof(GameObject));
+
+        GameObject healingEffect = GameObject.Instantiate(effect, player.transform.position, Quaternion.Euler(Vector3.zero), player.transform);
+        healingEffect.transform.position = new Vector3(healingEffect.transform.position.x, healingEffect.transform.position.y + 1, healingEffect.transform.position.z);
+
+        if (healingEffect != null)
+            Debug.Log("Healing effect instantiated");
+        else
+            Debug.Log("Healing effect not instantiated");
     }
 }
 

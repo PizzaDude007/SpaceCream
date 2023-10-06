@@ -20,7 +20,7 @@ public class PlayerItems : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.JoystickButton4))
         {
             CallItemOnJump();
         }
@@ -83,5 +83,10 @@ public class PlayerItems : MonoBehaviour
     public void UpdateCanvas(string itemName)
     {
         itemCanvas.InstanceItem(itemName);
+    }
+
+    public void CallItemOnPickup(Item item)
+    {
+        item.OnPickup(this);
     }
 }
