@@ -14248,6 +14248,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 5753987822067600212, guid: 4990489e1f0255041b901e6de8629be2, type: 3}
   m_PrefabInstance: {fileID: 600186293}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &600186295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5005356414781526761, guid: 4990489e1f0255041b901e6de8629be2, type: 3}
+  m_PrefabInstance: {fileID: 600186293}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987d05ab299fdd344836330ba7f19b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &605414274
 GameObject:
   m_ObjectHideFlags: 0
@@ -46722,6 +46733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9140620047945959778, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: itemCanvas
+      value: 
+      objectReference: {fileID: 600186295}
     - target: {fileID: 1182824263487680779, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -46889,6 +46904,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1628749530}
+  - {fileID: 600186293}
+  - {fileID: 803658290111489872}
   - {fileID: 1141796905}
   - {fileID: 1017848172}
   - {fileID: 1402364405}
@@ -46898,6 +46915,4 @@ SceneRoots:
   - {fileID: 758489655}
   - {fileID: 738063629}
   - {fileID: 647734696}
-  - {fileID: 803658290111489872}
   - {fileID: 118274631}
-  - {fileID: 600186293}

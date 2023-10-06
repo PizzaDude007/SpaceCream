@@ -7,6 +7,7 @@ public class PlayerItems : MonoBehaviour
     //public PlayerBehaviour player;
     public int attackDamage;
     public List<ItemList> items = new List<ItemList>();
+    public UpdateItemCanvas itemCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -77,5 +78,10 @@ public class PlayerItems : MonoBehaviour
         {
             i.item.OnJump(this, i.stacks);
         }
+    }
+
+    public void UpdateCanvas(string itemName)
+    {
+        itemCanvas.InstanceItem(itemName);
     }
 }

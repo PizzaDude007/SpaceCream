@@ -1,3 +1,4 @@
+using Codice.Client.Common.GameUI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
@@ -14,7 +15,7 @@ public class Rotate3DUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentAngle = Random.Range(minAngle, maxAngle);
     }
 
     // Update is called once per frame

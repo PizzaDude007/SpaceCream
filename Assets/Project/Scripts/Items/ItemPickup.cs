@@ -41,6 +41,7 @@ public class ItemPickup : MonoBehaviour
             }
         }
         player.items.Add(new ItemList(item, item.GiveName(), 1));
+        player.UpdateCanvas(item.GiveName());
         Debug.Log("Picked up " + item.GiveName() + " and added to inventory");
     }
 
