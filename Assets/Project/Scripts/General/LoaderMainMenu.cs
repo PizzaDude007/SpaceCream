@@ -51,6 +51,12 @@ public class LoaderMainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Hides the cursor...
+        Cursor.visible = false;
+
+        // Locks the cursor
+        Cursor.lockState = CursorLockMode.Locked;
+
         CreateResolutionDropdown();
         ShowMenu();
         if(mainAudioMixer.GetFloat("masterVolume", out currentMasterVolume))
@@ -94,6 +100,12 @@ public class LoaderMainMenu : MonoBehaviour
                 EventSystem.current.SetSelectedGameObject(null);
                 EventSystem.current.SetSelectedGameObject(menuFirstButton);
             }
+
+            if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7)))
+            {
+                ShowMenu();
+            }
+
             return;
         }
         
