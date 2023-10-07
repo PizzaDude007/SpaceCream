@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
+    public PlayerItems player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindAnyObjectByType<PlayerItems>();
+
     }
 
     // Update is called once per frame
@@ -24,8 +27,13 @@ public class BulletBehaviour : MonoBehaviour
         if (collision != null) {             
             if (collision.gameObject.layer == 8) //Layer 8 = Enemy
             {
-                collision.gameObject.GetComponent<EnemyBehaviour>().TakeDamage(30);
+                EnemyBehaviour enemy = collision.gameObject.GetComponent<EnemyBehaviour>();
+                enemy.TakeDamage(player.attackDamage);
+                player.CallItemOnHit(enemy);
+                //Displays damage dealt to enemy
+                enemy.gameObject.GetComponent<EnemyDamageOutput>().TakeDamage(player.attackDamage, player.attackColor);
                 Debug.Log("Enemy hit");
+                Destroy(Instantiate(Resources.Load("FX/FX_BloodShot"), collision.GetContact(0).point, Quaternion.identity), 2f);
                 Destroy(gameObject);
             }
             else if (collision.gameObject.layer == 6) //Layer 6 = Player

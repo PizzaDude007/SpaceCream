@@ -9,7 +9,6 @@ public class EnemyBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -21,6 +20,7 @@ public class EnemyBehaviour : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        Debug.Log("Enemy took " + damage + " damage, Remaining health = " + health);
         if(health <= 0)
         {
             Die();
@@ -29,6 +29,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Die()
     {
+        Destroy(Instantiate(Resources.Load("FX/FX_Explosion"), transform.position, Quaternion.identity), 5f);
         Destroy(gameObject);
     }
 }

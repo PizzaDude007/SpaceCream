@@ -5,15 +5,22 @@ using UnityEngine;
 public class PlayerItems : MonoBehaviour
 {
     //public PlayerBehaviour player;
-    public int attackDamage;
+    public int attackDamage = 10;
+    public Color attackColor = Color.white;
     public List<ItemList> items = new List<ItemList>();
     public UpdateItemCanvas itemCanvas;
+
+    public GameObject GunTransform;
+    public GunStats gunStats;
 
     // Start is called before the first frame update
     void Start()
     {
         //HealingItem item = new HealingItem();
         //items.Add(new ItemList(item, item.GiveName(), 1));
+        gunStats = GunTransform.GetComponentInChildren<GunStats>();
+        attackDamage = gunStats.baseDamage;
+        attackColor = Color.white;
         StartCoroutine(CallItemUpdate());
     }
 
@@ -66,6 +73,10 @@ public class PlayerItems : MonoBehaviour
 
     public void CallItemOnHit(EnemyBehaviour enemy)
     {
+        //Base Damage
+        enemy.TakeDamage(attackDamage);
+
+        //Item Damage
         foreach (ItemList i in items)
         {
             i.item.OnHit(this, enemy, i.stacks);

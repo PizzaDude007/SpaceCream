@@ -37,6 +37,7 @@ public class ThirdPersonCotroller : MonoBehaviour
     private VisualEffect vfxMuzzleFlash;
     private Transform bulletBarrel;
     public GameObject bulletPrefab;
+    public float bulletForce = 40f;
     public bool isShooting = false;
 
     public float invulnerableTime = 1f;
@@ -118,7 +119,7 @@ public class ThirdPersonCotroller : MonoBehaviour
         SoundFxManager.Instance.Shoot();
         GameObject bullet = Instantiate(bulletPrefab, bulletBarrel.position, bulletBarrel.rotation);
         bullet.transform.LookAt(lookTarget.transform.position);
-        bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * 1000f);                                
+        bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce, ForceMode.Impulse);                                
     }
 
     // Update is called once per frame

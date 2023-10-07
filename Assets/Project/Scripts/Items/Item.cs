@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
@@ -72,6 +73,7 @@ public class FireDamageItem: Item
     public override void OnHit(PlayerItems player, EnemyBehaviour enemy, int stacks)
     {
         enemy.TakeDamage(10 + stacks); //10 + stack
+        player.attackColor = Color.Lerp(Color.red, Color.yellow, 0.5f);
     }
 }
 
@@ -99,6 +101,8 @@ public class HealingAreaItem : Item
 
             //Align normal to ground
             healingArea.transform.rotation = Quaternion.FromToRotation(Vector3.up, player.GetGroundNormal());
+
+            GameObject.Destroy(healingArea, 15f);
             
             intenalCooldown = 10;
         }
