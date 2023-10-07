@@ -230,6 +230,8 @@ public class ThirdPersonCotroller : MonoBehaviour
         {
             if (collision.gameObject.layer == 8 && !isInvulnerable) //Enemy
             {
+                //Player recieves damage based on enemy type
+                PlayerBehaviour.Instance.TakeDamage(collision.gameObject.GetComponent<AssignEnemyType>().enemy.GetAttackDamage()); 
                 StartCoroutine("IsInvulnerable");
                 Debug.Log("Enemy " + collision.gameObject.name + " hit Player");
             }
@@ -243,7 +245,6 @@ public class ThirdPersonCotroller : MonoBehaviour
     IEnumerator IsInvulnerable()
     {
         isInvulnerable = true;
-        PlayerBehaviour.Instance.TakeDamage(50); 
         Debug.Log("Player is invulnerable");
         yield return new WaitForSeconds(invulnerableTime);
         isInvulnerable = false;

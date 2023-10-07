@@ -33,6 +33,11 @@ public abstract class Item
     {
 
     }
+
+    public virtual void SpawnItem(Vector3 position)
+    {
+        
+    }
 }
 
 public class HealingItem : Item
@@ -61,6 +66,12 @@ public class HealingItem : Item
         else
             Debug.Log("Healing effect not instantiated");
     }
+
+    public override void SpawnItem(Vector3 position)
+    {
+        GameObject gameObject = (GameObject)Resources.Load("Items/HealingItem", typeof(GameObject));
+        GameObject.Instantiate(gameObject, position, Quaternion.identity);
+    }
 }
 
 public class FireDamageItem: Item
@@ -74,6 +85,12 @@ public class FireDamageItem: Item
     {
         enemy.TakeDamage(10 + stacks); //10 + stack
         player.attackColor = Color.Lerp(Color.red, Color.yellow, 0.5f);
+    }
+
+    public override void SpawnItem(Vector3 position)
+    {
+        GameObject gameObject = (GameObject)Resources.Load("Items/FireDamageItem", typeof(GameObject));
+        GameObject.Instantiate(gameObject, position, Quaternion.identity);
     }
 }
 
@@ -106,5 +123,11 @@ public class HealingAreaItem : Item
             
             intenalCooldown = 10;
         }
+    }
+
+    public override void SpawnItem(Vector3 position)
+    {
+        GameObject gameObject = (GameObject)Resources.Load("Items/HealingAreaItem", typeof(GameObject));
+        GameObject.Instantiate(gameObject, position, Quaternion.identity);
     }
 }

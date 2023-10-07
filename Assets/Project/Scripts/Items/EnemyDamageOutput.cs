@@ -22,6 +22,7 @@ public class EnemyDamageOutput : MonoBehaviour
     void Update()
     {
         damageBarParent.transform.LookAt(Camera.main.transform);
+        damageBarParent.transform.Rotate(0.0f, 180.0f, 0.0f);
     }
 
     public void TakeDamage(int damage)

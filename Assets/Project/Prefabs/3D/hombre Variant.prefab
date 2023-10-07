@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: -7140880700590907301}
   - component: {fileID: -9140620047945959778}
   - component: {fileID: 31717049613989849}
+  - component: {fileID: -5851578475636759476}
   m_Layer: 6
   m_Name: hombre Variant
   m_TagString: Player
@@ -920,9 +921,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 10
-  attackColor: {r: 0, g: 0, b: 0, a: 0}
+  attackColor: {r: 1, g: 1, b: 1, a: 0}
   items: []
   itemCanvas: {fileID: 0}
+  GunTransform: {fileID: 8540652761883408241}
+  gunStats: {fileID: 0}
 --- !u!114 &31717049613989849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,6 +939,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: -9140620047945959778}
+--- !u!114 &-5851578475636759476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043958449335203702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ab32d2f38dfc049a8108f69ddb1833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedEnemyTypes: 
+  enemyTypes: []
+  minSpawnRange: 30
+  maxSpawnRange: 100
+  maxEnemies: 0
+  spawnRate: 0
+  blackhole_FX: {fileID: 4589200581048109098, guid: bf033e38cab3ba149b513bede465efe8, type: 3}
 --- !u!1 &5060871913435665453
 GameObject:
   m_ObjectHideFlags: 0
