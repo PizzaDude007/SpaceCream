@@ -17,7 +17,8 @@ public class ThirdPersonCotroller : MonoBehaviour
     public float controlDeadZoneX = 0.1f, controlDeadZoneY = 0.1f;
     public float speedJump = 10f;
 
-    [SerializeField] private float maxAngle = 90f;
+    [SerializeField]
+    private float maxAngle = 60f;
 
     //public Transform targetToGrab;
 
@@ -145,18 +146,14 @@ public class ThirdPersonCotroller : MonoBehaviour
             StartCoroutine("PlayShootVFX");
             //isShooting = true;
         }
-
-        //Debug.Log("Capsule collider = " + capsuleCollider.height + "\n Base Height = " + baseHeight + "\n HeightCollider = " + heightCollider);
+        
+        //Para saltar
         heightCollider = playerAnimator.GetFloat("HeightCollider");
         capsuleCollider.height = heightCollider * baseHeight;
-        //capsuleCollider.radius = 1/heightCollider * baseRadius;
 
-        //Debug.Log("Player Velocity = " + gameObject.GetComponent<Rigidbody>().velocity);
         gameObject.GetComponent<Rigidbody>().velocity += speedJump * Math.Abs(1 - heightCollider) * Vector3.up * Time.deltaTime;
         //Debug.Log("Player Velocity with Height = " + gameObject.GetComponent<Rigidbody>().velocity);
 
-        //gravity = playerAnimator.GetFloat("Gravity");
-        //Physics.gravity = InitialGravity * gravity;
 
         //angle between player and camera
         float angle = Vector3.Angle(playerTarget.transform.forward, transform.forward);
@@ -172,6 +169,7 @@ public class ThirdPersonCotroller : MonoBehaviour
             //centrar la camara
             if (angle > maxAngle)
             {
+                //playerTarget.transform.rotation = Quaternion.Slerp(playerTarget.transform.rotation, transform.rotation, Time.deltaTime * 1f);
                 if (playerTarget.transform.rotation.y < transform.rotation.y)
                     playerTarget.transform.Rotate(0, 1f * mouseSensX, 0);
                 else
@@ -200,28 +198,14 @@ public class ThirdPersonCotroller : MonoBehaviour
         }
 
         //Para rotar al jugador
-        if (playerAnimator.GetFloat("speed") == 0 && horizontal != 0)
+        //if (playerAnimator.GetFloat("speed") == 0 && horizontal != 0)
+        if (horizontal != 0)
         {
             transform.Rotate(0, horizontal * rotationSpeed, 0);
             if(angle>maxAngle)
                 playerTarget.transform.Rotate(0f, -horizontal * counterRotate, 0f);
         }
 
-        //Para saludar
-        /*if (Input.GetKeyDown(KeyCode.E))
-        {
-            playerAnimator.SetTrigger("wave");
-        }*/
-
-        /*
-        timeScale = playerAnimator.GetFloat("TimeScale");
-
-        
-        Time.timeScale = timeSc     ale;*/
-
-
-        //if (Input.GetKeyDown(KeyCode.G))
-        //    playerAnimator.SetTrigger("Grab");
     }
 
     private void OnCollisionEnter(Collision collision)

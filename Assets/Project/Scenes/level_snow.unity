@@ -47201,6 +47201,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: hombre Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5535281056078311715, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: maxAngle
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535281056078311715, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: rotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -47219,15 +47227,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47240,6 +47248,18 @@ PrefabInstance:
     - target: {fileID: 5671278574255222220, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413231782626633949, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: bodyWeight
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413231782626633949, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: eyesWeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413231782626633949, guid: 0d31e94f86b478c4d8fe18eef363e1bb, type: 3}
+      propertyPath: clampWeight
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -2859,6 +2859,10 @@ PrefabInstance:
       propertyPath: counterRotate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6333940364775555430, guid: fe183c7f1ab85f6459c2e82c2dbd67e7, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2872,6 +2876,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 143195926}
+  - {fileID: 8454293469567207157}
   - {fileID: 1201971498}
   - {fileID: 364866976}
   - {fileID: 1322219905}
@@ -2880,7 +2885,6 @@ SceneRoots:
   - {fileID: 1293950376}
   - {fileID: 541319323}
   - {fileID: 72399772}
-  - {fileID: 8454293469567207157}
   - {fileID: 1056194236}
   - {fileID: 1337701381}
   - {fileID: 173740424}

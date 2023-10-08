@@ -11,6 +11,10 @@ public class ShootIKControl : MonoBehaviour
     public Transform followTarget;
     private Transform spineBone;
 
+    //public float lookAtSpeed = 0.8f, chestRotationSpeed = 0.8f, hipsRotationSpeed = 0.8f, handIKSpeed = 0.8f;
+    public float lookAtWeight = 1.0f, bodyWeight = 0.8f, headWeight = 0.8f, eyesWeight = 0.8f, clampWeight = 0.8f;
+    private Vector3 currentLookAtPosition;
+
     public float rotateWeight = 0.8f, positionWeight = 0.8f;
 
     private ThirdPersonCotroller thirdPerson;
@@ -27,8 +31,11 @@ public class ShootIKControl : MonoBehaviour
     {
         playerAnimator = GetComponent<Animator>();
         thirdPerson = GetComponent<ThirdPersonCotroller>();
-        spineBone = playerAnimator.GetBoneTransform(HumanBodyBones.Spine);
+        spineBone = playerAnimator.GetBoneTransform(HumanBodyBones.Hips);
         quaternion = Quaternion.Euler(0, 0, 0);
+
+        //Set look-at position to followTarget
+        currentLookAtPosition = transform.position + transform.forward;
     }
 
     // Update is called once per frame
@@ -51,48 +58,16 @@ public class ShootIKControl : MonoBehaviour
     {
         if (playerAnimator)
         {
-            if(isShooting && Time.timeScale != 0)
+            if (isShooting && Time.timeScale != 0)
             {
-                if(followTarget != null)
+                if (followTarget != null)
                 {
-                    playerAnimator.SetLookAtWeight(1);
+                    playerAnimator.SetLookAtWeight(1.0f);
+                    playerAnimator.SetLookAtWeight(lookAtWeight, bodyWeight, headWeight, eyesWeight, clampWeight);
                     playerAnimator.SetLookAtPosition(followTarget.position);
-
-                    Quaternion lookAt = Quaternion.LookRotation(followTarget.transform.position - playerAnimator.GetBoneTransform(HumanBodyBones.Chest).position);
-                    Quaternion correction = Quaternion.Euler(shoulderOffset);
-
-                    float angle = Vector3.Angle(followTarget.transform.forward, playerAnimator.transform.forward);
-                    if (angle > 20 && angle < 45)
-                    {
-                        playerAnimator.SetBoneLocalRotation(HumanBodyBones.Chest, lookAt * correction);
-                    }
-                    else if (angle > 45)
-                    {
-                        playerAnimator.SetBoneLocalRotation(HumanBodyBones.Chest, lookAt * correction);
-                        playerAnimator.SetBoneLocalRotation(HumanBodyBones.Hips, Quaternion.FromToRotation(playerAnimator.transform.forward, followTarget.transform.forward));
-                    }
-
-                    //playerAnimator.SetBoneLocalRotation(HumanBodyBones.Chest, Quaternion.FromToRotation(playerAnimator.transform.forward, followTarget.transform.forward));
-
-
-                    //if (angle > shoulderOffset)
-                    //{
-                    //    Quaternion lookAt = Quaternion.LookRotation(followTarget.transform.forward);
-                    //    playerAnimator.SetBoneLocalRotation(HumanBodyBones.Hips, Quaternion.FromToRotation(playerAnimator.transform.forward, followTarget.transform.forward));
-                    //    //playerAnimator.SetFloat("speed", 1f);
-                    //    //float direction = Vector3.Dot(playerAnimator.transform.right, followTarget.transform.forward);
-                    //    //playerAnimator.SetFloat("direction", direction);
-                    //    //playerAnimator.bodyRotation = Quaternion.FromToRotation(playerAnimator.transform.forward, followTarget.transform.forward);
-                    //}
-                    //else
-                    //{
-                    //    playerAnimator.SetFloat("rotate", 0f);
-                    //    quaternion = Quaternion.FromToRotation(playerAnimator.transform.forward, followTarget.transform.forward);
-                    //    playerAnimator.SetBoneLocalRotation(HumanBodyBones.Chest, quaternion);
-                    //}
                 }
 
-                if(rightHandTarget != null)
+                if (rightHandTarget != null)
                 {
                     playerAnimator.SetIKPositionWeight(AvatarIKGoal.RightHand, positionWeight);
                     playerAnimator.SetIKRotationWeight(AvatarIKGoal.RightHand, rotateWeight);

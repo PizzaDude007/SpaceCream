@@ -54,6 +54,8 @@ MonoBehaviour:
   canvasMenu: {fileID: 0}
   sfxManager: {fileID: 0}
   musicSource: {fileID: 0}
+  PlayerData: {fileID: 0}
+  HUDCanvas: {fileID: 0}
   escenas:
   - level_snow
   - level_desert
