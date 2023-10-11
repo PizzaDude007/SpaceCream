@@ -7,6 +7,8 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
+using Unity.Services.Analytics;
+using Unity.Services.Core;
 
 public class ThirdPersonCotroller : MonoBehaviour
 {
@@ -114,6 +116,10 @@ public class ThirdPersonCotroller : MonoBehaviour
         //yield return new WaitUntil(() => (!playerAnimator.GetCurrentAnimatorStateInfo(1).IsName("shoot")));
         yield return new WaitForSeconds(shootTime);
         shootBullet();
+        AnalyticsService.Instance.CustomData("weaponFired", new Dictionary<string, object>
+        {
+            { "levelName", SceneManager.GetActiveScene().name }
+        });
         vfxMuzzleFlash.Play();
     }
 
@@ -138,6 +144,10 @@ public class ThirdPersonCotroller : MonoBehaviour
         if (Input.GetButtonDown("Roll") && playerAnimatorInfo.IsName("runs"))
         {
             playerAnimator.SetTrigger("roll");
+            AnalyticsService.Instance.CustomData("rollingAction", new Dictionary<string, object>
+            {
+                { "levelName", SceneManager.GetActiveScene().name }
+            });
         }
 
         //Para disparar

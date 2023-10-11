@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -33,6 +34,11 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Die()
     {
+        AnalyticsService.Instance.CustomData("enemyKilled", new Dictionary<string, object>
+        {
+            { "enemyName", enemyType.enemy.GiveName() }, { "levelName", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}
+        });
+
         Destroy(Instantiate(Resources.Load("FX/FX_Explosion"), transform.position, Quaternion.identity), 5f);
         onEnemyDeath.Invoke();
         Destroy(gameObject);
