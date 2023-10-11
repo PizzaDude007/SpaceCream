@@ -171,8 +171,11 @@ public class LoaderMainMenu : MonoBehaviour
         Time.timeScale = 1f;
         //SceneManager.LoadScene(PlayerBehaviour.Instance.player.currentLevel);
         PlayerBehaviour.Instance.ResetLives();
-        StartCoroutine(LoadIntroCutScene(PlayerBehaviour.Instance.player.currentLevel));
-        Debug.Log("Loading level: " + PlayerBehaviour.Instance.player.currentLevel);
+        string scene = PlayerBehaviour.Instance.player.currentLevel;
+        if(scene.Equals("menu_space") || scene.Equals("loader"))
+            scene = PlayerBehaviour.Instance.player.maxLevel;
+        StartCoroutine(LoadIntroCutScene(scene));
+        Debug.Log("Loading level: " + scene);
     }
 
     IEnumerator LoadIntroCutScene(string scene)

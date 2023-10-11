@@ -80,3 +80,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Project/Scenes/level_snow/OcclusionCullingData.asset.meta
+Assets/Project/Scenes/level_snow/OcclusionCullingData.asset
+Assets/Project/Scenes/level_desert/OcclusionCullingData.asset.meta
+Assets/Project/Scenes/level_desert/OcclusionCullingData.asset

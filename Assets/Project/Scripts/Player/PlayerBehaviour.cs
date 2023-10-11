@@ -6,10 +6,12 @@ using System.IO;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using TMPro;
+using UnityEngine.Experimental.Playables;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    public PlayerData playerData;
+    //public PlayerData playerData;
     public Player player;
 
     public string fileName;
@@ -18,6 +20,9 @@ public class PlayerBehaviour : MonoBehaviour
     private string fileContent;
 
     public static PlayerBehaviour Instance;
+
+    public GameObject savedTextObject;
+    private TMP_Text savedText;
 
     private void Awake()
     {
@@ -30,6 +35,9 @@ public class PlayerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        savedText = savedTextObject.GetComponent<TMP_Text>();
+        savedTextObject.SetActive(false);
+
         if (File.Exists(fileName))
         {
             sr = new StreamReader(Application.persistentDataPath + "/" + fileName, false);
@@ -42,11 +50,11 @@ public class PlayerBehaviour : MonoBehaviour
             //players = JsonUtility.FromJson<List<Player>>(fileContent);
             sr.Close();
         }
-        else if (playerData != null)
+        /*else if (playerData != null)
         {
             player = new Player();
             UpdatePlayer();
-        }
+        }*/
         else
         {
             player = new Player();
@@ -68,7 +76,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         string scene = SceneManager.GetActiveScene().name;
 
-        if(scene.Equals("loader") || scene.Equals("main_menu"))
+        if(scene.Equals("loader") || scene.Equals("menu_space"))
         {
             scene = player.maxLevel;
         }
@@ -78,10 +86,19 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void SavePlayer(string scene)
     {
+        if(scene.Equals("loader") || scene.Equals("menu_space"))
+        {
+            scene = player.maxLevel;
+        } 
+        else if (scene.StartsWith("level_"))
+        {
+            player.maxLevel = scene;
+        }
+
         player.lastSaved = DateTime.Now.ToShortDateString() +" "+DateTime.Now.Hour+":"+DateTime.Now.Minute;
         player.currentLevel = scene;
 
-        playerData.lives = player.lives;
+        /*playerData.lives = player.lives;
         playerData.maxLives = player.maxLives;
         playerData.health = player.health;
         playerData.maxLevel = player.maxLevel;
@@ -89,40 +106,56 @@ public class PlayerBehaviour : MonoBehaviour
         playerData.levelsCompleted = player.levelsCompleted;
         playerData.items = player.items;
         playerData.weapons = player.weapons;
-        playerData.lastSaved = player.lastSaved;
+        playerData.lastSaved = player.lastSaved;*/
 
         sw = new StreamWriter(Application.persistentDataPath + "/" + fileName, false);
         Debug.Log("Path: " + Application.persistentDataPath + "/" + fileName);
         fileContent = JsonUtility.ToJson(player);
         sw.Write(fileContent);
         sw.Close();
+
+        if(fileContent != null)
+        {
+            StartCoroutine(SavedText());
+        }
+        else
+        {
+            Debug.Log("Error saving file");
+        }
+    }
+
+    IEnumerator SavedText()
+    {
+        savedText.text = "Guardado: "+player.lastSaved;
+        savedTextObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        savedTextObject.SetActive(false);
     }
 
     public void TakeDamage(int damage)
     {
-        playerData.health -= damage;
-        Debug.Log("Took Damage, Player health: " + playerData.health);
-        if(playerData.health <= 0)
+        player.health -= damage;
+        Debug.Log("Took Damage, Player health: " + player.health);
+        if(player.health <= 0)
         {
-            playerData.lives --;
-            playerData.health = 100;
-            player.lives = playerData.lives;
+            player.lives --;
+            player.health = 100;
             HUDController.Instance.UpdateLives();
             Debug.Log("Lost one life");
             
         } 
-        if (playerData.lives <= 0)
+        if (player.lives <= 0)
         {
             Debug.Log("Game Over");
-            DeathController player = FindAnyObjectByType<DeathController>();
-            player.OnPlayerDeath();
-            playerData.maxLevel = SceneManager.GetActiveScene().name;
-            playerData.lives = 3;
-            playerData.health = 100;
+            DeathController playerDeath = FindAnyObjectByType<DeathController>();
+            playerDeath.OnPlayerDeath();
+            player.maxLevel = SceneManager.GetActiveScene().name;
+            player.lives = 3;
+            player.health = 100;
             SavePlayer("ice_cream_shop");
         }
-        UpdatePlayer();
-        Debug.Log("Player lives: " + playerData.lives);
+        //UpdatePlayer();
+        Debug.Log("Player lives: " + player.lives);
     }
 
     public void Heal(int heal)
@@ -133,10 +166,10 @@ public class PlayerBehaviour : MonoBehaviour
             return;
         }
         player.health += heal;
-        playerData.health += heal;
+        //playerData.health += heal;
     }
 
-    private void UpdatePlayer()
+    /*private void UpdatePlayer()
     {
         player.lives = playerData.lives;
         player.health = playerData.health;
@@ -146,17 +179,21 @@ public class PlayerBehaviour : MonoBehaviour
         player.items = playerData.items;
         player.weapons = playerData.weapons;
         player.lastSaved = playerData.lastSaved;
-    }
+    }*/
 
     private void OnApplicationQuit()
     {
-        SavePlayer();
+        string scene = SceneManager.GetActiveScene().name;
+        if(!scene.Equals("menu_space") && !scene.Equals("loader"))
+        {
+            SavePlayer();
+        }
     }
 
     public void ResetLives()
     {
         player.lives = player.maxLives;
-        playerData.lives = player.maxLives;
+        //playerData.lives = player.maxLives;
     }
 
 }
