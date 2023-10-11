@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     public int lives = 3;
+    public int maxLives = 3;
     public float health = 100;
     public string maxLevel;
     public string currentLevel;

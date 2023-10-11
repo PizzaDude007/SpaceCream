@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 4314383381603403850}
   - component: {fileID: 8423860496561514000}
   - component: {fileID: 3693529213067493626}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LifeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2992,7 +2992,7 @@ GameObject:
   - component: {fileID: 6953629156495159642}
   - component: {fileID: 5218636450711544687}
   - component: {fileID: 3635811024436228712}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3966,7 +3966,7 @@ GameObject:
   - component: {fileID: 6727653854274426280}
   - component: {fileID: 6297936952336247144}
   - component: {fileID: 8919929358250627961}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LifeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

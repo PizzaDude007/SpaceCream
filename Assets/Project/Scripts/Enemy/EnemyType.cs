@@ -17,7 +17,7 @@ public abstract class EnemyType
 
 public class CrabEnemy : EnemyType
 {
-    private int attackDamage = 10;
+    private int attackDamage = 40;
     private GameObject enemyPrefab = (GameObject)Resources.Load("Enemies/Crab", typeof(GameObject));
 
     public override string GiveName()
@@ -38,7 +38,7 @@ public class CrabEnemy : EnemyType
 
 public class SpecialCrabEnemy : EnemyType
 {
-    private int attackDamage = 20;
+    private int attackDamage = 60;
     private GameObject enemyPrefab = (GameObject)Resources.Load("Enemies/SpecialCrab", typeof(GameObject));
 
     public override string GiveName()

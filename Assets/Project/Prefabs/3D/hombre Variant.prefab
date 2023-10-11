@@ -91,8 +91,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764812045739897441}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.014294831, y: -0.035790242, z: 0.0005119959, w: 0.99925697}
-  m_LocalPosition: {x: 0.5, y: 1.7000002, z: -1}
+  m_LocalRotation: {x: 0.014294847, y: -0.035790242, z: 0.00051199645, w: 0.99925697}
+  m_LocalPosition: {x: 0.5, y: 1.7000003, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -752,6 +752,7 @@ GameObject:
   - component: {fileID: -9140620047945959778}
   - component: {fileID: 31717049613989849}
   - component: {fileID: -5851578475636759476}
+  - component: {fileID: -2913185600623901843}
   m_Layer: 6
   m_Name: hombre Variant
   m_TagString: Player
@@ -896,6 +897,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHandTarget: {fileID: 2289336427211389500}
   followTarget: {fileID: 2289336427211389500}
+  lookAtWeight: 1
+  bodyWeight: 0.8
+  headWeight: 0.8
+  eyesWeight: 0.8
+  clampWeight: 0.8
   rotateWeight: 0.2
   positionWeight: 0.8
   aimCamera: {fileID: 9076814866555362786}
@@ -951,13 +957,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ab32d2f38dfc049a8108f69ddb1833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedEnemyTypes: 
   enemyTypes: []
   minSpawnRange: 30
   maxSpawnRange: 100
   maxEnemies: 0
   spawnRate: 0
   blackhole_FX: {fileID: 4589200581048109098, guid: bf033e38cab3ba149b513bede465efe8, type: 3}
+--- !u!114 &-2913185600623901843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043958449335203702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a75f8c729b44849bf9170502a2ac09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onPlayerDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5535281056078311715}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6413231782626633949}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5060871913435665453
 GameObject:
   m_ObjectHideFlags: 0

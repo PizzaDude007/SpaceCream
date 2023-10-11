@@ -925,9 +925,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 38839298}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoaderMainMenu, General
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: ice_cream_shop
+      objectReference: {fileID: 0}
     - target: {fileID: 4337126555537852008, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

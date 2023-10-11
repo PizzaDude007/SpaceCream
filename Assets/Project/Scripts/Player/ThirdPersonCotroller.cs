@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
@@ -16,6 +17,7 @@ public class ThirdPersonCotroller : MonoBehaviour
     public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, controlSensY = 0.5f, rotationSpeed = 0.3f, counterRotate = 0.5f;
     public float controlDeadZoneX = 0.1f, controlDeadZoneY = 0.1f;
     public float speedJump = 10f;
+
 
     [SerializeField]
     private float maxAngle = 60f;

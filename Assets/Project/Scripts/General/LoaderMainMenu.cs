@@ -145,8 +145,22 @@ public class LoaderMainMenu : MonoBehaviour
         open = false;
         Time.timeScale = 1f;
         string scene = escenas[Random.Range(0, escenas.Length)];
+        PlayerBehaviour.Instance.ResetLives();
         PlayerBehaviour.Instance.SavePlayer(scene);
-        SceneManager.LoadScene(scene);
+        //SceneManager.LoadScene(scene);
+        StartCoroutine(LoadIntroCutScene(scene));
+    }
+
+    public void PlayGame(string scene)
+    {
+        DesactivarPaneles();
+        SoundFxManager.Instance.PlayAmbient();
+        open = false;
+        Time.timeScale = 1f;
+        PlayerBehaviour.Instance.ResetLives();
+        PlayerBehaviour.Instance.SavePlayer(scene);
+        //SceneManager.LoadScene(scene);
+        StartCoroutine(LoadIntroCutScene(scene));
     }
 
     public void ContinueGame()
@@ -155,8 +169,28 @@ public class LoaderMainMenu : MonoBehaviour
         SoundFxManager.Instance.PlayAmbient();
         open = false;
         Time.timeScale = 1f;
-        SceneManager.LoadScene(PlayerBehaviour.Instance.player.currentLevel);
+        //SceneManager.LoadScene(PlayerBehaviour.Instance.player.currentLevel);
+        PlayerBehaviour.Instance.ResetLives();
+        StartCoroutine(LoadIntroCutScene(PlayerBehaviour.Instance.player.currentLevel));
         Debug.Log("Loading level: " + PlayerBehaviour.Instance.player.currentLevel);
+    }
+
+    IEnumerator LoadIntroCutScene(string scene)
+    {
+        LoadIntroScene.instance.ActivateIntroCutScene();
+        yield return new WaitForSeconds(2.9f);
+        SceneManager.LoadScene(scene);
+    }
+
+    IEnumerator LoadingCutScene(string scene)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(scene);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            Debug.Log("Loading progress: " + progress);
+            yield return null;
+        }
     }
 
     public void ReturnToGame()

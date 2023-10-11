@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class PlayerBehaviour : MonoBehaviour
 {
@@ -50,6 +51,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             player = new Player();
             player.lives = 3;
+            player.maxLives = 3;
             player.health = 100;
             player.maxLevel = "level_desert";
             player.currentLevel = "";
@@ -80,6 +82,7 @@ public class PlayerBehaviour : MonoBehaviour
         player.currentLevel = scene;
 
         playerData.lives = player.lives;
+        playerData.maxLives = player.maxLives;
         playerData.health = player.health;
         playerData.maxLevel = player.maxLevel;
         playerData.currentLevel = player.currentLevel;
@@ -111,8 +114,9 @@ public class PlayerBehaviour : MonoBehaviour
         if (playerData.lives <= 0)
         {
             Debug.Log("Game Over");
+            DeathController player = FindAnyObjectByType<DeathController>();
+            player.OnPlayerDeath();
             playerData.maxLevel = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("ice_cream_shop");
             playerData.lives = 3;
             playerData.health = 100;
             SavePlayer("ice_cream_shop");
@@ -148,12 +152,20 @@ public class PlayerBehaviour : MonoBehaviour
     {
         SavePlayer();
     }
+
+    public void ResetLives()
+    {
+        player.lives = player.maxLives;
+        playerData.lives = player.maxLives;
+    }
+
 }
 
 [Serializable]
 public class Player
 {
     public int lives = 3;
+    public int maxLives = 3;
     public float health = 100;
     public string maxLevel;
     public string currentLevel;
