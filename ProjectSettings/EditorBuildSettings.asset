@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/menu_space.unity
     guid: 09316e806e7439a468166f959f4cf18d
   - enabled: 1
+    path: Assets/Project/Scenes/intro_panels.unity
+    guid: f6c5e381105986545b06ffdd858952bb
+  - enabled: 1
     path: Assets/Project/Scenes/level_snow.unity
     guid: 5f1c0afc4b03a4c4d908216fd15e6cc3
   - enabled: 1

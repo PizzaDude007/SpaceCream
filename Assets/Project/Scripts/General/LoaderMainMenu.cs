@@ -9,6 +9,7 @@ using UnityEngine.UI;
 using TMPro;
 using Random = UnityEngine.Random;
 using UnityEngine.EventSystems;
+using UnityEngine.Analytics;
 
 public class LoaderMainMenu : MonoBehaviour
 {
@@ -22,8 +23,10 @@ public class LoaderMainMenu : MonoBehaviour
     public GameObject canvasMenu;
     public GameObject sfxManager;
     public GameObject musicSource;
+    public GameObject ambientSource;
     public GameObject PlayerData;
     public GameObject HUDCanvas;
+    public GameObject AnalyticsObject;
     public string[] escenas;
     public bool open;
 
@@ -134,7 +137,9 @@ public class LoaderMainMenu : MonoBehaviour
         //DontDestroyOnLoad(panelMenu);
         DontDestroyOnLoad(sfxManager);
         DontDestroyOnLoad(musicSource);
+        DontDestroyOnLoad(ambientSource);
         DontDestroyOnLoad(PlayerData);
+        DontDestroyOnLoad(AnalyticsObject);
         //DontDestroyOnLoad(HUDCanvas);
     }
 
@@ -172,7 +177,7 @@ public class LoaderMainMenu : MonoBehaviour
         //SceneManager.LoadScene(PlayerBehaviour.Instance.player.currentLevel);
         PlayerBehaviour.Instance.ResetLives();
         string scene = PlayerBehaviour.Instance.player.currentLevel;
-        if(scene.Equals("menu_space") || scene.Equals("loader"))
+        if(scene.Equals("menu_space") || scene.Equals("loader") || scene.Equals("intro_panels"))
             scene = PlayerBehaviour.Instance.player.maxLevel;
         StartCoroutine(LoadIntroCutScene(scene));
         Debug.Log("Loading level: " + scene);

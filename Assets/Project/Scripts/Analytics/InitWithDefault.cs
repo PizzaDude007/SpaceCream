@@ -4,11 +4,13 @@ using UnityEngine;
 using Unity.Services.Analytics;
 using Unity.Services.Core;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class InitWithDefault : MonoBehaviour
 {
     public GameObject analyticsCanvas;
     public Button consentButton;
+    public UnityEvent onConsent;
 
     async void Start()
     {
@@ -28,5 +30,6 @@ public class InitWithDefault : MonoBehaviour
     {
         AnalyticsService.Instance.StartDataCollection();
         analyticsCanvas.SetActive(false);
+        onConsent.Invoke();
     }
 }

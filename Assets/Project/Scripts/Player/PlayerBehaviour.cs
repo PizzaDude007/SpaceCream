@@ -61,7 +61,7 @@ public class PlayerBehaviour : MonoBehaviour
             player.lives = 3;
             player.maxLives = 3;
             player.health = 100;
-            player.maxLevel = "level_desert";
+            player.maxLevel = "ice_cream_shop";
             player.currentLevel = "";
             player.levelsCompleted = new List<int>();
             player.items = new List<GameObject>();
@@ -76,7 +76,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         string scene = SceneManager.GetActiveScene().name;
 
-        if(scene.Equals("loader") || scene.Equals("menu_space"))
+        if(scene.Equals("loader") || scene.Equals("menu_space") || scene.Equals("intro_panels"))
         {
             scene = player.maxLevel;
         }
@@ -86,7 +86,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public void SavePlayer(string scene)
     {
-        if(scene.Equals("loader") || scene.Equals("menu_space"))
+        if(scene.Equals("loader") || scene.Equals("menu_space") || scene.Equals("intro_panels"))
         {
             scene = player.maxLevel;
         } 
@@ -184,7 +184,7 @@ public class PlayerBehaviour : MonoBehaviour
     private void OnApplicationQuit()
     {
         string scene = SceneManager.GetActiveScene().name;
-        if(!scene.Equals("menu_space") && !scene.Equals("loader"))
+        if(!scene.Equals("menu_space") && !scene.Equals("loader") || scene.Equals("intro_panels"))
         {
             SavePlayer();
         }
