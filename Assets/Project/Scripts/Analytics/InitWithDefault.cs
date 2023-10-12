@@ -5,6 +5,7 @@ using Unity.Services.Analytics;
 using Unity.Services.Core;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class InitWithDefault : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class InitWithDefault : MonoBehaviour
     async void Start()
     {
         await UnityServices.InitializeAsync();
+        SceneManager.LoadScene("menu_space", LoadSceneMode.Additive);
 
         AskForConsent();
     }
@@ -31,5 +33,6 @@ public class InitWithDefault : MonoBehaviour
         AnalyticsService.Instance.StartDataCollection();
         analyticsCanvas.SetActive(false);
         onConsent.Invoke();
+        SceneManager.UnloadSceneAsync("loader");    
     }
 }

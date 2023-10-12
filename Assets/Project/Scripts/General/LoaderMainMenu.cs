@@ -10,6 +10,7 @@ using TMPro;
 using Random = UnityEngine.Random;
 using UnityEngine.EventSystems;
 using UnityEngine.Analytics;
+using Unity.Plastic.Antlr3.Runtime;
 
 public class LoaderMainMenu : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class LoaderMainMenu : MonoBehaviour
     public GameObject musicSource;
     public GameObject ambientSource;
     public GameObject PlayerData;
-    public GameObject HUDCanvas;
+    public GameObject eventListener;
     public GameObject AnalyticsObject;
     public string[] escenas;
     public bool open;
@@ -81,7 +82,9 @@ public class LoaderMainMenu : MonoBehaviour
         else if (SceneManager.GetActiveScene().name == "loader")
         {
             SoundFxManager.Instance.PlayMusic(0);
-            SceneManager.LoadScene("menu_space", LoadSceneMode.Single);    
+            //SceneManager.LoadScene("menu_space", LoadSceneMode.Single);    
+            //InitWithDefault init = FindObjectOfType<InitWithDefault>();
+            //init.opLoadScene.allowSceneActivation = true;
         }
         else
         {
@@ -140,7 +143,7 @@ public class LoaderMainMenu : MonoBehaviour
         DontDestroyOnLoad(ambientSource);
         DontDestroyOnLoad(PlayerData);
         DontDestroyOnLoad(AnalyticsObject);
-        //DontDestroyOnLoad(HUDCanvas);
+        DontDestroyOnLoad(eventListener);
     }
 
     public void PlayGame()
@@ -186,8 +189,11 @@ public class LoaderMainMenu : MonoBehaviour
     IEnumerator LoadIntroCutScene(string scene)
     {
         LoadIntroScene.instance.ActivateIntroCutScene();
-        yield return new WaitForSeconds(2.9f);
-        SceneManager.LoadScene(scene);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(scene);
+        operation.allowSceneActivation = false;
+        yield return new WaitForSeconds(3f);
+        operation.allowSceneActivation = true;
+        //SceneManager.LoadScene(scene);
     }
 
     IEnumerator LoadingCutScene(string scene)
@@ -324,6 +330,19 @@ public class LoaderMainMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullScreen;
     }
+
+    public void SetMSAA(bool isMSAA)
+    {
+        Camera camera = Camera.main;
+        camera.allowMSAA = isMSAA;
+        //qualityDropdown.value = 4;
+    }
+    
+    public void SetDynamicResolution(bool isDynamicRes)
+    {
+        Camera.main.allowDynamicResolution = isDynamicRes;
+        //qualityDropdown.value = 4;
+    }
     
     public void SetTextureQuality(int textureIndex)
     {
@@ -376,6 +395,7 @@ public class LoaderMainMenu : MonoBehaviour
         PlayerPrefs.SetInt("TextureQualityPreference", textureDropdown.value);
         PlayerPrefs.SetInt("AntiAliasingPreference", AADropdown.value);
         PlayerPrefs.SetInt("FullscreenPreference", Convert.ToInt32(Screen.fullScreen));
+        PlayerPrefs.SetInt("MSAAPreference", Convert.ToInt32(Camera.main.allowMSAA));
         //PlayerPrefs.SetFloat("VolumePreference", currentVolume);
     }
 
@@ -405,6 +425,11 @@ public class LoaderMainMenu : MonoBehaviour
             Screen.fullScreen = Convert.ToBoolean(PlayerPrefs.GetInt("FullscreenPreference"));
         else
             Screen.fullScreen = true;
+
+        if(PlayerPrefs.HasKey("MSAAPreference"))
+            Camera.main.allowMSAA = Convert.ToBoolean(PlayerPrefs.GetInt("MSAAPreference"));
+        else
+            Camera.main.allowMSAA = true;
         
         //if (PlayerPrefs.HasKey("VolumePreference"))
         //    volumeSlider.value = PlayerPrefs.GetFloat("VolumePreference");
@@ -421,7 +446,7 @@ public class LoaderMainMenu : MonoBehaviour
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height + " - " + resolutions[i].refreshRateRatio + " Hz";
             options.Add(option);
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
                 currentResolutionIndex = i;

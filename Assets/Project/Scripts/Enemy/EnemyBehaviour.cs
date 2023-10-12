@@ -9,11 +9,13 @@ public class EnemyBehaviour : MonoBehaviour
     private int health = 100;
     private AssignEnemyType enemyType;
     public UnityEvent onEnemyDeath;
+    private string levelName;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyType = GetComponent<AssignEnemyType>();
+        levelName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         AnalyticsService.Instance.CustomData("enemyKilled", new Dictionary<string, object>
         {
-            { "enemyName", enemyType.enemy.GiveName() }, { "levelName", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name}
+            { "enemyName", enemyType.enemy.GiveName() }, { "levelName", levelName }
         });
 
         Destroy(Instantiate(Resources.Load("FX/FX_Explosion"), transform.position, Quaternion.identity), 5f);

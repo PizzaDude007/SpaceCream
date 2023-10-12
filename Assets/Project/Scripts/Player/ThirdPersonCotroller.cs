@@ -16,14 +16,13 @@ public class ThirdPersonCotroller : MonoBehaviour
     private AnimatorStateInfo playerAnimatorInfo;
 
     public GameObject playerTarget, lookTarget;
-    public Rigidbody rigidbody;
+    private Rigidbody rigidBody;
     public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, controlSensY = 0.5f, rotationSpeed = 0.3f, counterRotate = 0.5f;
     public float controlDeadZoneX = 0.1f, controlDeadZoneY = 0.1f;
     public float speedJump = 10f;
 
     public int maxJumps = 1, maxHeight = 10;
-    private bool isJumping;
-    private int numJumps, height;
+    private int numJumps;
 
     [SerializeField]
     private float maxAngle = 60f;
@@ -52,6 +51,10 @@ public class ThirdPersonCotroller : MonoBehaviour
     public float invulnerableTime = 1f;
     private bool isInvulnerable = false;
 
+    private string activeScene;
+
+    private bool isShootingLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,16 +67,14 @@ public class ThirdPersonCotroller : MonoBehaviour
 
         isRunning = false;
 
-        rigidbody = GetComponent<Rigidbody>();
+        rigidBody = GetComponent<Rigidbody>();
 
         //Set jump variables
         numJumps = 0;
-        height = 0;
-        isJumping = false;
 
         //Ver si es nieve o desierto
         levelName = SceneManager.GetActiveScene().name;
-        //StartCoroutine(PlayRunSound());
+        isShootingLevel = levelName.Contains("level");
 
         vfxMuzzleFlash = GetComponentInChildren<VisualEffect>();
         bulletBarrel = vfxMuzzleFlash.gameObject.transform;
@@ -129,7 +130,7 @@ public class ThirdPersonCotroller : MonoBehaviour
         shootBullet();
         AnalyticsService.Instance.CustomData("weaponFired", new Dictionary<string, object>
         {
-            { "levelName", SceneManager.GetActiveScene().name }
+            { "levelName", levelName }
         });
         vfxMuzzleFlash.Play();
     }
@@ -151,18 +152,33 @@ public class ThirdPersonCotroller : MonoBehaviour
         playerAnimator.SetFloat("speed", Input.GetAxis("Vertical"));
         playerAnimator.SetFloat("direction", horizontal);
 
+        //Para correr
+        if (!isShootingLevel)
+        {
+            //No se puede correr en la heladería
+        }
+        else if (isShootingLevel && Input.GetButton("Run") && horizontal > 0.1f)
+        {
+            playerAnimator.SetBool("run", true);
+            rigidBody.AddForce(transform.forward * 2f, ForceMode.Impulse);
+        }
+        else
+        {
+            playerAnimator.SetBool("run", false);
+        }
+
         //Para rodar
-        if (Input.GetButtonDown("Roll") && playerAnimatorInfo.IsName("runs"))
+        if (Input.GetButtonDown("Roll"))
         {
             playerAnimator.SetTrigger("roll");
             AnalyticsService.Instance.CustomData("rollingAction", new Dictionary<string, object>
             {
-                { "levelName", SceneManager.GetActiveScene().name }
+                { "levelName", levelName }
             });
         }
 
         //Para disparar
-        if ((Input.GetButtonDown("Fire1") || Input.GetAxis("Shoot") == 1) && SceneManager.GetActiveScene().name.Contains("level"))
+        if ((Input.GetButtonDown("Fire1") || Input.GetAxis("Shoot") == 1) && isShootingLevel)
         {
             StopAllCoroutines(); 
             StartCoroutine("IsShootingWait");
@@ -179,26 +195,7 @@ public class ThirdPersonCotroller : MonoBehaviour
             Jump();
         }
 
-
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    numJumps++;
-        //    if (!isJumping)
-        //        isJumping = true;
-        //    AnalyticsService.Instance.CustomData("jumpingAction", new Dictionary<string, object>
-        //    {
-        //        { "levelName", SceneManager.GetActiveScene().name }
-        //    });
-        //}
-
-        //if(isJumping && numJumps <= maxJumps && height <= maxHeight)
-        //{
-        //    playerAnimator.SetTrigger("jump");
-        //    //rigidbody.velocity += speedJump * Input.GetAxis("Jump") * Vector3.up * Time.deltaTime;
-        //    height++;
-        //}
-
-        rigidbody.velocity += speedJump * Math.Abs(1 - heightCollider) * Vector3.up * Time.deltaTime;
+        rigidBody.velocity += speedJump * Math.Abs(1 - heightCollider) * Vector3.up * Time.deltaTime;
         //Debug.Log("Player Velocity with Height = " + gameObject.GetComponent<Rigidbody>().velocity);
 
 
@@ -261,12 +258,12 @@ public class ThirdPersonCotroller : MonoBehaviour
         {
             numJumps++;
             playerAnimator.SetTrigger("jump");
-            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
-            rigidbody.AddForce(Vector3.up * speedJump, ForceMode.VelocityChange);
+            rigidBody.velocity = new Vector3(rigidBody.velocity.x, 0, rigidBody.velocity.z);
+            rigidBody.AddForce(Vector3.up * speedJump, ForceMode.VelocityChange);
 
             AnalyticsService.Instance.CustomData("jumpingAction", new Dictionary<string, object>
             {
-                { "levelName", SceneManager.GetActiveScene().name }
+                { "levelName", levelName }
             });
         }
     }
