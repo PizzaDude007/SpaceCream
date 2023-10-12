@@ -16,10 +16,14 @@ public class ThirdPersonCotroller : MonoBehaviour
     private AnimatorStateInfo playerAnimatorInfo;
 
     public GameObject playerTarget, lookTarget;
+    public Rigidbody rigidbody;
     public float mouseSensX = 5f, mouseSensY = 5f, controlSensX = 1f, controlSensY = 0.5f, rotationSpeed = 0.3f, counterRotate = 0.5f;
     public float controlDeadZoneX = 0.1f, controlDeadZoneY = 0.1f;
     public float speedJump = 10f;
 
+    public int maxJumps = 1, maxHeight = 10;
+    private bool isJumping;
+    private int numJumps, height;
 
     [SerializeField]
     private float maxAngle = 60f;
@@ -59,6 +63,13 @@ public class ThirdPersonCotroller : MonoBehaviour
         InitialGravity = Physics.gravity;
 
         isRunning = false;
+
+        rigidbody = GetComponent<Rigidbody>();
+
+        //Set jump variables
+        numJumps = 0;
+        height = 0;
+        isJumping = false;
 
         //Ver si es nieve o desierto
         levelName = SceneManager.GetActiveScene().name;
@@ -163,7 +174,31 @@ public class ThirdPersonCotroller : MonoBehaviour
         heightCollider = playerAnimator.GetFloat("HeightCollider");
         capsuleCollider.height = heightCollider * baseHeight;
 
-        gameObject.GetComponent<Rigidbody>().velocity += speedJump * Math.Abs(1 - heightCollider) * Vector3.up * Time.deltaTime;
+        if(Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
+
+
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    numJumps++;
+        //    if (!isJumping)
+        //        isJumping = true;
+        //    AnalyticsService.Instance.CustomData("jumpingAction", new Dictionary<string, object>
+        //    {
+        //        { "levelName", SceneManager.GetActiveScene().name }
+        //    });
+        //}
+
+        //if(isJumping && numJumps <= maxJumps && height <= maxHeight)
+        //{
+        //    playerAnimator.SetTrigger("jump");
+        //    //rigidbody.velocity += speedJump * Input.GetAxis("Jump") * Vector3.up * Time.deltaTime;
+        //    height++;
+        //}
+
+        rigidbody.velocity += speedJump * Math.Abs(1 - heightCollider) * Vector3.up * Time.deltaTime;
         //Debug.Log("Player Velocity with Height = " + gameObject.GetComponent<Rigidbody>().velocity);
 
 
@@ -220,6 +255,22 @@ public class ThirdPersonCotroller : MonoBehaviour
 
     }
 
+    private void Jump()
+    {
+        if(numJumps < maxJumps)
+        {
+            numJumps++;
+            playerAnimator.SetTrigger("jump");
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0, rigidbody.velocity.z);
+            rigidbody.AddForce(Vector3.up * speedJump, ForceMode.VelocityChange);
+
+            AnalyticsService.Instance.CustomData("jumpingAction", new Dictionary<string, object>
+            {
+                { "levelName", SceneManager.GetActiveScene().name }
+            });
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision != null)
@@ -234,6 +285,10 @@ public class ThirdPersonCotroller : MonoBehaviour
             else if(collision.gameObject.layer != 7) //Not floor
             {
                 Debug.Log("Hit " + collision.gameObject.name + ", Layer = " + collision.gameObject.layer);
+            }
+            else
+            {
+            numJumps = 0;
             }
         }
     }

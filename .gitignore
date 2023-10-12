@@ -26,6 +26,8 @@
 /[Aa]ssets/[Ss]ound/*
 /[Aa]ssets/[Ff]lat[Kk]it/*
 /[Aa]ssets/[Qq]uibli/*
+/[Aa]ssets/[Pp]lugins/*
+/[Aa]ssets/[Kk]evin [Ii]glesias/*
 
 # Ignore compiled executables
 /[Ee]xecutables/*
