@@ -9,8 +9,6 @@ using UnityEngine.UI;
 using TMPro;
 using Random = UnityEngine.Random;
 using UnityEngine.EventSystems;
-using UnityEngine.Analytics;
-using Unity.Plastic.Antlr3.Runtime;
 
 public class LoaderMainMenu : MonoBehaviour
 {

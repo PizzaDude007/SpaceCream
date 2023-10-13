@@ -28,7 +28,7 @@ public class Dashboard : MonoBehaviour
     void Update()
     {
         //If player presses E, open dashboard
-        if (isPlayerInside && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button1)))
+        if (isPlayerInside && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button3)))
         {
             onDashBoardOpen.Invoke();
             Debug.Log("Open Dashboard");
