@@ -157,7 +157,7 @@ public class ThirdPersonCotroller : MonoBehaviour
         {
             //No se puede correr en la heladería
         }
-        else if (isShootingLevel && Input.GetButton("Run") && horizontal > 0.1f)
+        else if (isShootingLevel && Input.GetButton("Run") && (playerAnimatorInfo.IsName("runs") || playerAnimatorInfo.IsName("jog")))
         {
             playerAnimator.SetBool("run", true);
             rigidBody.AddForce(transform.forward * 2f, ForceMode.Impulse);

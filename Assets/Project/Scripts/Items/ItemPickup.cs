@@ -37,7 +37,9 @@ public class ItemPickup : MonoBehaviour
             if (i.name == item.GiveName())
             {
                 i.stacks++;
-                Debug.Log("Picked up " + item.GiveName() + " and added to inventory");
+                Debug.Log("Picked up " + item.GiveName() + " again, stack = " + i.stacks);
+                player.UpdateCanvas(item.GiveName(), i.stacks);
+                player.CallItemOnPickup(item);
                 return;
             }
         }

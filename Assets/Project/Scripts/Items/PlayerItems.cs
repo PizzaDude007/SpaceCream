@@ -96,6 +96,11 @@ public class PlayerItems : MonoBehaviour
         itemCanvas.InstanceItem(itemName);
     }
 
+    public void UpdateCanvas(string itemName, int stacks)
+    {
+        itemCanvas.InstanceItem(itemName, stacks);
+    }
+
     public void CallItemOnPickup(Item item)
     {
         item.OnPickup(this);

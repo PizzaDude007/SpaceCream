@@ -141,7 +141,7 @@ public class LoaderMainMenu : MonoBehaviour
         DontDestroyOnLoad(ambientSource);
         DontDestroyOnLoad(PlayerData);
         DontDestroyOnLoad(AnalyticsObject);
-        DontDestroyOnLoad(eventListener);
+        //DontDestroyOnLoad(eventListener);
     }
 
     public void PlayGame()

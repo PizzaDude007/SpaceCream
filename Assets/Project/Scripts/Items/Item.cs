@@ -43,6 +43,8 @@ public abstract class Item
 public class HealingItem : Item
 {
     GameObject effect;
+    bool effectInstantiated = false;
+
     public override string GiveName()
     {
         return "Health Item";
@@ -55,6 +57,9 @@ public class HealingItem : Item
 
     public override void OnPickup(PlayerItems player)
     {
+        if(effectInstantiated)
+            return;
+
         if (effect == null)
             effect = (GameObject)Resources.Load("ItemEffects/HealingEffect", typeof(GameObject));
 
@@ -62,7 +67,10 @@ public class HealingItem : Item
         healingEffect.transform.position = new Vector3(healingEffect.transform.position.x, healingEffect.transform.position.y + 1, healingEffect.transform.position.z);
 
         if (healingEffect != null)
+        {
+            effectInstantiated = true;
             Debug.Log("Healing effect instantiated");
+        }
         else
             Debug.Log("Healing effect not instantiated");
     }
