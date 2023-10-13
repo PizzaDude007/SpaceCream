@@ -2,16 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Unity.Services.Analytics;
 
 public class ItemPickup : MonoBehaviour
 {
     public Item item;
     public Items itemDrop;
+    private string levelName;
 
     // Start is called before the first frame update
     void Start()
     {
         item = AssignItem(itemDrop);
+        levelName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -32,7 +36,12 @@ public class ItemPickup : MonoBehaviour
 
     public void AddItem(PlayerItems player)
     {
-        foreach(ItemList i in player.items)
+        AnalyticsService.Instance.CustomData("itemPicked", new Dictionary<string, object>
+            {
+                { "levelName", levelName }, { "itemType", item.GiveName()}
+            });
+
+        foreach (ItemList i in player.items)
         {
             if (i.name == item.GiveName())
             {
