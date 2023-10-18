@@ -121,6 +121,10 @@ public class LoaderMainMenu : MonoBehaviour
         {
             genderDropdown.SetActive(true);
         }
+        else
+        {
+            genderDropdown.SetActive(false);
+        }
 
         
         if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7) || !Application.isFocused) && !open)
