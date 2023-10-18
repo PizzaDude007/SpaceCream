@@ -24,6 +24,10 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject savedTextObject;
     private TMP_Text savedText;
 
+    public UnityEvent analyticsFalse, anlyticsTrue;
+
+    public GenderSelect genderSelect;
+
     private void Awake()
     {
         if (Instance != null)
@@ -67,8 +71,19 @@ public class PlayerBehaviour : MonoBehaviour
             player.items = new List<GameObject>();
             player.weapons = new List<GameObject>();
             player.lastSaved = DateTime.Now.ToShortDateString() + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute;
+            player.isFemale = false;
+            player.analyticsAccepted = false;
 
             SavePlayer();
+        }
+
+        if(player.analyticsAccepted)
+        {
+            anlyticsTrue.Invoke();
+        }
+        else
+        {
+            analyticsFalse.Invoke();
         }
     }
 
@@ -169,6 +184,35 @@ public class PlayerBehaviour : MonoBehaviour
         //playerData.health += heal;
     }
 
+    public void SetGender(bool isFemale)
+    {
+        player.isFemale = isFemale;
+    }
+
+    public void SetGender(int isFemale)
+    {
+        if(genderSelect == null)
+        {
+            genderSelect = FindObjectOfType<GenderSelect>();
+        }
+
+        if(isFemale == 0)
+        {
+            player.isFemale = false;
+            genderSelect.SetMale();
+        }
+        else
+        {
+            player.isFemale = true;
+            genderSelect.SetFemale();
+        }
+    }
+
+    public void SetAnalytics(bool accepted)
+    {
+        player.analyticsAccepted = accepted;
+    }
+
     /*private void UpdatePlayer()
     {
         player.lives = playerData.lives;
@@ -210,4 +254,6 @@ public class Player
     public List<GameObject> items;
     public List<GameObject> weapons;
     public string lastSaved;
+    public bool isFemale = false;
+    public bool analyticsAccepted = false;
 }

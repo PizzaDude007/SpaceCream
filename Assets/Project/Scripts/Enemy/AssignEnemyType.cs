@@ -29,6 +29,8 @@ public class AssignEnemyType : MonoBehaviour
                 return new CrabEnemy();
             case EnemyTypes.SpecialCrab:
                 return new SpecialCrabEnemy();
+            case EnemyTypes.BigOrk:
+                return new BigOrk();
             default:
                 return new CrabEnemy();
         }
@@ -38,5 +40,6 @@ public class AssignEnemyType : MonoBehaviour
 public enum EnemyTypes
 {
     Crab,
-    SpecialCrab
+    SpecialCrab,
+    BigOrk
 }

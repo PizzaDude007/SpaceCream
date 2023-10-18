@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyCrabController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     public Vector2 destinationArea;
     public float waitToPatrol;
@@ -14,6 +14,7 @@ public class EnemyCrabController : MonoBehaviour
     private Animator enemyController;
     [SerializeField]
     private NavMeshAgent agent;
+    private GameObject[] playerTransforms;
     private Transform playerTransform;
     private EnemyState currentState;
     private Vector3 patrolDestination = Vector3.zero;
@@ -23,7 +24,20 @@ public class EnemyCrabController : MonoBehaviour
         enemyController = GetComponent<Animator>();
         //agent = GetComponent<NavMeshAgent>();
         //playerTransform = GameObject.Find("Player").transform;
-        playerTransform = GameObject.FindWithTag("Player").transform;
+        playerTransforms = GameObject.FindGameObjectsWithTag("Player");
+        if (playerTransforms.Length > 0) { 
+            foreach (GameObject player in playerTransforms)
+            {
+                if (player.activeInHierarchy)
+                {
+                    Debug.Log("Enemy follow " + player.name);
+                    playerTransform = player.transform;
+                    break;
+                }
+            }
+        }
+        else
+            playerTransform = GameObject.FindWithTag("Player").transform;
         currentState = EnemyState.NONE;
         ChangeState(EnemyState.PATROL);
     }
@@ -125,6 +139,11 @@ public class EnemyCrabController : MonoBehaviour
                 break;
         }
         enemyController.SetFloat("speed", agent.velocity.sqrMagnitude);
+    }
+
+    public void SetPlayerTransform(Transform playerTransform)
+    {
+        this.playerTransform = playerTransform;
     }
 }
 

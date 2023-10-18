@@ -28,7 +28,7 @@ public class InitWithDefault : MonoBehaviour
         consentButton.onClick.AddListener(ConsentGiven);
     }
 
-    void ConsentGiven()
+    public void ConsentGiven()
     {
         AnalyticsService.Instance.StartDataCollection();
         analyticsCanvas.SetActive(false);

@@ -55,6 +55,8 @@ public class ThirdPersonCotroller : MonoBehaviour
 
     private bool isShootingLevel;
 
+    public bool followPlayer = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +68,8 @@ public class ThirdPersonCotroller : MonoBehaviour
         InitialGravity = Physics.gravity;
 
         isRunning = false;
+
+        followPlayer = false;
 
         rigidBody = GetComponent<Rigidbody>();
 
@@ -288,6 +292,19 @@ public class ThirdPersonCotroller : MonoBehaviour
             numJumps = 0;
             }
         }
+    }
+
+    public void followPlayerTransform(Transform followTransform) {
+        followPlayer = true;
+        StartCoroutine(FollowTransform(followTransform));
+    }
+
+    IEnumerator FollowTransform(Transform followTransform) {         
+        while (followPlayer)
+        {
+            transform.position = followTransform.position;
+        }
+        yield return new WaitForSeconds(0.1f);
     }
 
     IEnumerator IsInvulnerable()

@@ -1,0 +1,2256 @@
+fileFormatVersion: 2
+guid: 79bde0aee2ee90845a0121da7e839ff4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b3d403e5628af478b0e2e015619922
+      internalID: 822663839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596ad8d93d810d1459d84d0ff80eafd9
+      internalID: 500584972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f303b194124359e428b2b4f402bcdb0d
+      internalID: 1216586984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6a2f1080055cf48a175351b189a26f
+      internalID: -17829604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9494ef547bf0c418f92f062a8fe339
+      internalID: -609145114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc67c19ce63b4c46aad65ea564df302
+      internalID: 2020318527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7c0814b62c8c54fbd3d63db6f67258
+      internalID: 942450433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995dcf57dfc35354eb730b5118b9fca9
+      internalID: -59179217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3888d81bf0b2f9f43aa2ec1b8243faf1
+      internalID: -808648441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995e3c7552893b74faa65f9108ed09ba
+      internalID: -1468257277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b576169c78663664797cf125003d3a80
+      internalID: -1698773533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb32caac7cdf9f4c9f5ac85e55a987f
+      internalID: -1544839593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3070f4c9f5d69d4f9f310f4afaf2d3e
+      internalID: 1799978092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272df1d0869d8a940b620f32f4c53341
+      internalID: 631199309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_A
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d33f40c7bf67c748a0a2283631abe77
+      internalID: 125183403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 18
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50794ad29d1886840a25159a8ef1dbc0
+      internalID: -1785651632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa31c807e8836b409872b1820864a16
+      internalID: 1985919523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe6e0b46c3120a4384c64acfffbbf94
+      internalID: 1804396689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bb26e52f00c284ab907f39bd199a60
+      internalID: -1935523112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387b1690e16e7e24bb77b3798e9e2df1
+      internalID: 476816046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da78eeb90522574b9f993f3608054a6
+      internalID: -269663743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de651614b10b2554d8567203f166e1c4
+      internalID: 622840356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 18
+        width: 93
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04138caeaf62f64c80d91e035d08ff3
+      internalID: -1388944328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 18
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca2a3b1cd456d94f92967bf717b3bcf
+      internalID: -24401501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5452a67298d34b346884aab62322153e
+      internalID: 274556836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b8b979b91ac6443a9946bebbb2309f
+      internalID: 405604713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85a3144a21eec74cb304c43f9936aef
+      internalID: 1971933862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 18
+        width: 93
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcfa5a9155a4154db1554fc1b5508a1
+      internalID: -252438215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85ebf869acbfc642abba0d9b84e62ee
+      internalID: -1326121039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 2903
+        y: 18
+        width: 94
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e83d990eeff251449e7a55f6232bd38
+      internalID: -1896247306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_D
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1caab1d05eb76f49b50c7cf6dc81e7c
+      internalID: 1237134701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a235fee494d895846a8d05c4b47ed91c
+      internalID: 1292501118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_E
+      rect:
+        serializedVersion: 2
+        x: 3212
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace1403de43057843aa9be83e1aa581f
+      internalID: 841826221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 3311
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a849d473c7d92c4f86545ba883bd04b
+      internalID: -1621573811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 8
+        width: 94
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764c20226c05d5d48a6d1a9432f2d17a
+      internalID: 1834269214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 8
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc4e03c5ed8a2f478de94ef66179e0d
+      internalID: 1778063751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 3622
+        y: 2
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a2f98fa1e3f404bba9cb4130168088
+      internalID: -1703221902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a22d187653c1a04db39a92198b1cc41
+      internalID: 519599465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 3811
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8874c093c11f8d6489bfba1dbc4eb8ef
+      internalID: -896754937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 3911
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a22542f0f1a3d4b96bfd4b5359e117
+      internalID: -702427564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 4012
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298a34fe0c5acfe42a09cb1dcf5e033b
+      internalID: -470534148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 4112
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0cb5428950c594cbe6d9c22b3fc375
+      internalID: 1441481284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 4211
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfb568a1fa38b2439ee570f7988d42c
+      internalID: -142736342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 4311
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765b38b5caee1e2478454ee2a9b8eeab
+      internalID: 969946790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 4412
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6762e7fc12010a14b91c4d6dd37c20aa
+      internalID: -1788724075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441dca679907db544931e25585bd24c4
+      internalID: -1607611999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 4611
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967a0f98bbb50eb4c86207c35b0bf0af
+      internalID: 608739047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 4711
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8de0dd2f0f6514e8de9a9d12e37fca
+      internalID: -1384129004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 4812
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a77e0cce36eee54e81f3bb47e1f9d3c
+      internalID: 1473723029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 4912
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2787b2251a493b42857d868ce7691a4
+      internalID: -2099495460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 5012
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3031fd4ad333ec3489d06cfb3b32b70e
+      internalID: -763628943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 5111
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d356b1c357b413419bcd7c683acad3c
+      internalID: 534769482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 5211
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8651e4f5364c245b81f52ea7c82e59
+      internalID: 1173092906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 5312
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fae380bf091e274fa0dfcfe51522abc
+      internalID: 1687959996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 5412
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaaaf051f069294fa0443cac6ce3a37
+      internalID: 967476082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 5511
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f357c5b5cfddb854e9adecaf2d5b4432
+      internalID: -1079094741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 5611
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc606d8f86b22d94e80624d0e89a6636
+      internalID: -1485958228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 5712
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6b1f551d0232647b5002c6c13c8b49
+      internalID: 1902961174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 5812
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8169e645399f8844915505678c20cea
+      internalID: 1924358185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 5911
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec50d9af388d1c74aaeec77a71f30a07
+      internalID: -1713161976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 6011
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74f4b87faedd7b468b2ba2af9662921
+      internalID: 487548551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 6114
+        y: 3
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ce65af913aed4e9ed6131d98e7eae
+      internalID: -133149064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 6212
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532fc2a9d55a57547ba73012172e86e1
+      internalID: -106636610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 6315
+        y: 3
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa16f64d2fc02a4aa2fc306d6c5a787
+      internalID: 107101820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 3
+        width: 70
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e16942518a54604ab7fab1df0dccf11
+      internalID: -1517612466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 6511
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ce25cd2bc94e54190e9049d0d1bb92
+      internalID: 1796456414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 6614
+        y: 3
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322311e17e0f9a141944d7638178bc5e
+      internalID: -1664890523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 6712
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d43a3ba91c3bb140ac82455cd314635
+      internalID: -185297664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 6811
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3724296d2ffca24f91fcd8256b7764d
+      internalID: -1288262368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 6911
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450c014367f4adf4d85fa438a262840d
+      internalID: -218556431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 7012
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13682448e4bd76b47b31ae5cb00d0ae6
+      internalID: 1148333483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 7112
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220f1b2e91a040d45b035413b78a57c1
+      internalID: 1727349425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 7211
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fd0bd105a129d44921b894234efeb5
+      internalID: 515721118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 7311
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5beba641e8e8c43845a4555809f3df
+      internalID: -1956859166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 7421
+        y: 2
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d23a6dbbebcd30449ccb34fd3f9ead6
+      internalID: 490941407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 7512
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9fc3fc777d4e5418bef532f1b19caf
+      internalID: -502897851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 7611
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827e639016f3f594190e09ae8cf68084
+      internalID: 147232444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 7711
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f7f32da64470c45875b57eeb171786
+      internalID: 356061057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_R
+      rect:
+        serializedVersion: 2
+        x: 7811
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19991afd30bbff249b6ed5977fe18250
+      internalID: 1931607428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 7912
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25d47979cf96054a8c1d88b458c6d9c
+      internalID: -1946885290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_S
+      rect:
+        serializedVersion: 2
+        x: 8012
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6568786e6158b7469bb6936acfba8dd
+      internalID: -152126279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 8111
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00cec5bea4dd7644b83d192b1ef3a358
+      internalID: 971272916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 8201
+        y: 25
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86797b0e5a72e3e49ac389be2aa68d6c
+      internalID: -676675326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 8304
+        y: 18
+        width: 93
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b885f6a124ab694393a5c41321407c2
+      internalID: 1119642525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 8412
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6460fc46697cb54eae5d2643ea207d1
+      internalID: -1861993167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 8501
+        y: 25
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f281fcdcca8e0774e8b1196203e04baa
+      internalID: 1384945433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 8603
+        y: 18
+        width: 94
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70c2230066748f47aa2d4041e4a8ddd
+      internalID: -555737922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 8712
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47854509e2a34f4495590ef08a847a4
+      internalID: 765783172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_T
+      rect:
+        serializedVersion: 2
+        x: 8812
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c5a6aab2ccaf9478a78fb42de396de
+      internalID: 1563622242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 8911
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bc1aac4a2834744a419783b40e1919
+      internalID: 1696195896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_W
+      rect:
+        serializedVersion: 2
+        x: 9011
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc9004ab48603b4982a242d3dea9d00
+      internalID: -530204613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 9111
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e09fb90bfabc84bbb1654a021e7a0d
+      internalID: -1099543157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 9212
+        y: 12
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f2a7970708003438abd48c8661dfc3
+      internalID: -863301402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 9312
+        y: 12
+        width: 77
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab858ef1f0088a240a34938178f90463
+      internalID: 272151074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_Dark_spritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 9411
+        y: 12
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39edce0334823943bc7030061b63228
+      internalID: -887820816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 918dc978ddd583b49859358e827c7753
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Keyboard_Dark_A: 125183403
+      Keyboard_Dark_D: 1237134701
+      Keyboard_Dark_E: 841826221
+      Keyboard_Dark_R: 1931607428
+      Keyboard_Dark_S: -152126279
+      Keyboard_Dark_T: 1563622242
+      Keyboard_Dark_W: -530204613
+      Keyboard_Dark_spritesheet_0: 822663839
+      Keyboard_Dark_spritesheet_1: 500584972
+      Keyboard_Dark_spritesheet_10: -1698773533
+      Keyboard_Dark_spritesheet_11: -1544839593
+      Keyboard_Dark_spritesheet_12: 1799978092
+      Keyboard_Dark_spritesheet_13: 631199309
+      Keyboard_Dark_spritesheet_15: -1785651632
+      Keyboard_Dark_spritesheet_16: 1985919523
+      Keyboard_Dark_spritesheet_17: 1804396689
+      Keyboard_Dark_spritesheet_18: -1935523112
+      Keyboard_Dark_spritesheet_19: 476816046
+      Keyboard_Dark_spritesheet_2: 1216586984
+      Keyboard_Dark_spritesheet_20: -269663743
+      Keyboard_Dark_spritesheet_21: 622840356
+      Keyboard_Dark_spritesheet_22: -1388944328
+      Keyboard_Dark_spritesheet_23: -24401501
+      Keyboard_Dark_spritesheet_24: 274556836
+      Keyboard_Dark_spritesheet_25: 405604713
+      Keyboard_Dark_spritesheet_26: 1971933862
+      Keyboard_Dark_spritesheet_27: -252438215
+      Keyboard_Dark_spritesheet_28: -1326121039
+      Keyboard_Dark_spritesheet_29: -1896247306
+      Keyboard_Dark_spritesheet_3: -17829604
+      Keyboard_Dark_spritesheet_31: 1292501118
+      Keyboard_Dark_spritesheet_33: -1621573811
+      Keyboard_Dark_spritesheet_34: 1834269214
+      Keyboard_Dark_spritesheet_35: 1778063751
+      Keyboard_Dark_spritesheet_36: -1703221902
+      Keyboard_Dark_spritesheet_37: 519599465
+      Keyboard_Dark_spritesheet_38: -896754937
+      Keyboard_Dark_spritesheet_39: -702427564
+      Keyboard_Dark_spritesheet_4: -609145114
+      Keyboard_Dark_spritesheet_40: -470534148
+      Keyboard_Dark_spritesheet_41: 1441481284
+      Keyboard_Dark_spritesheet_42: -142736342
+      Keyboard_Dark_spritesheet_43: 969946790
+      Keyboard_Dark_spritesheet_44: -1788724075
+      Keyboard_Dark_spritesheet_45: -1607611999
+      Keyboard_Dark_spritesheet_46: 608739047
+      Keyboard_Dark_spritesheet_47: -1384129004
+      Keyboard_Dark_spritesheet_48: 1473723029
+      Keyboard_Dark_spritesheet_49: -2099495460
+      Keyboard_Dark_spritesheet_5: 2020318527
+      Keyboard_Dark_spritesheet_50: -763628943
+      Keyboard_Dark_spritesheet_51: 534769482
+      Keyboard_Dark_spritesheet_52: 1173092906
+      Keyboard_Dark_spritesheet_53: 1687959996
+      Keyboard_Dark_spritesheet_54: 967476082
+      Keyboard_Dark_spritesheet_55: -1079094741
+      Keyboard_Dark_spritesheet_56: -1485958228
+      Keyboard_Dark_spritesheet_57: 1902961174
+      Keyboard_Dark_spritesheet_58: 1924358185
+      Keyboard_Dark_spritesheet_59: -1713161976
+      Keyboard_Dark_spritesheet_6: 942450433
+      Keyboard_Dark_spritesheet_60: 487548551
+      Keyboard_Dark_spritesheet_61: -133149064
+      Keyboard_Dark_spritesheet_62: -106636610
+      Keyboard_Dark_spritesheet_63: 107101820
+      Keyboard_Dark_spritesheet_64: -1517612466
+      Keyboard_Dark_spritesheet_65: 1796456414
+      Keyboard_Dark_spritesheet_66: -1664890523
+      Keyboard_Dark_spritesheet_67: -185297664
+      Keyboard_Dark_spritesheet_68: -1288262368
+      Keyboard_Dark_spritesheet_69: -218556431
+      Keyboard_Dark_spritesheet_7: -59179217
+      Keyboard_Dark_spritesheet_70: 1148333483
+      Keyboard_Dark_spritesheet_71: 1727349425
+      Keyboard_Dark_spritesheet_72: 515721118
+      Keyboard_Dark_spritesheet_73: -1956859166
+      Keyboard_Dark_spritesheet_74: 490941407
+      Keyboard_Dark_spritesheet_75: -502897851
+      Keyboard_Dark_spritesheet_76: 147232444
+      Keyboard_Dark_spritesheet_77: 356061057
+      Keyboard_Dark_spritesheet_79: -1946885290
+      Keyboard_Dark_spritesheet_8: -808648441
+      Keyboard_Dark_spritesheet_81: 971272916
+      Keyboard_Dark_spritesheet_82: -676675326
+      Keyboard_Dark_spritesheet_83: 1119642525
+      Keyboard_Dark_spritesheet_84: -1861993167
+      Keyboard_Dark_spritesheet_85: 1384945433
+      Keyboard_Dark_spritesheet_86: -555737922
+      Keyboard_Dark_spritesheet_87: 765783172
+      Keyboard_Dark_spritesheet_89: 1696195896
+      Keyboard_Dark_spritesheet_9: -1468257277
+      Keyboard_Dark_spritesheet_91: -1099543157
+      Keyboard_Dark_spritesheet_92: -863301402
+      Keyboard_Dark_spritesheet_93: 272151074
+      Keyboard_Dark_spritesheet_94: -887820816
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

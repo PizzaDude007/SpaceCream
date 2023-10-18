@@ -56,3 +56,24 @@ public class SpecialCrabEnemy : EnemyType
         return enemyPrefab;
     }
 }
+
+public class BigOrk : EnemyType
+{
+    private int attackDamage = 80;
+    private GameObject enemyPrefab = (GameObject)Resources.Load("Enemies/BigOrk", typeof(GameObject));
+
+    public override string GiveName()
+    {
+        return "Big Ork";
+    }
+
+    public override int GetAttackDamage()
+    {
+        return attackDamage;
+    }
+
+    public override GameObject GetEnemyPrefab()
+    {
+        return enemyPrefab;
+    }
+}

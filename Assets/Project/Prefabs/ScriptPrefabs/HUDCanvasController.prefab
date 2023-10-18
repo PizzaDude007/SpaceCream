@@ -548,6 +548,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 5753987822067600212}
+    - target: {fileID: 5374665876993759047, guid: 6ed4ff7d1557a89408972c83e2018f23, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5966371064882481588, guid: 6ed4ff7d1557a89408972c83e2018f23, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

@@ -12315,7 +12315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76fce65e0948f44fb890cfa3a77a139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinationArea: {x: 30, y: 30}
+  destinationArea: {x: 40, y: 40}
   waitToPatrol: 6
   distancePatrol2Chase: 20
   distanceChase2Attack: 4

@@ -83,7 +83,7 @@ public class CharacterDamage : MonoBehaviour
             else
             {
                 Debug.Log("Enemy dead");
-                gameObject.GetComponent<EnemyCrabController>().ChangeStateToDeath();
+                gameObject.GetComponent<EnemyController>().ChangeStateToDeath();
                 Destroy(gameObject, timeToDestroy);
             }
         }

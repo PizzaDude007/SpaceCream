@@ -29,6 +29,8 @@ public class LoaderMainMenu : MonoBehaviour
     public string[] escenas;
     public bool open;
 
+    public GameObject genderDropdown;
+
     public GameObject opcionesGenerales;
     public GameObject opcionesGraficos;
     public GameObject opcionesSonido;
@@ -97,7 +99,8 @@ public class LoaderMainMenu : MonoBehaviour
 
     void Update()
     {
-        if (SceneManager.GetActiveScene().name.Equals("menu_space"))
+        String currentScene = SceneManager.GetActiveScene().name;
+        if (currentScene.Equals("menu_space"))
         {
             if(EventSystem.current.currentSelectedGameObject == null)
             {
@@ -110,8 +113,15 @@ public class LoaderMainMenu : MonoBehaviour
                 ShowMenu();
             }
 
+            genderDropdown.SetActive(true);
+
             return;
         }
+        else if(currentScene.Equals("ice_cream_shop"))
+        {
+            genderDropdown.SetActive(true);
+        }
+
         
         if ((Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7) || !Application.isFocused) && !open)
         {
