@@ -63,25 +63,49 @@ public class UpdateItemCanvas : MonoBehaviour
         }
     }
 
+    public void InstanceItem(ItemList itemList)
+    {
+        if(itemList.stacks == 1)
+            InstanceItem(itemList.name);
+        else
+            InstanceItem(itemList.name, itemList.stacks);
+    }
+
+    public void InstanceListOfItems(List<ItemList> items)
+    {
+        foreach(ItemList i in items)
+        {
+            InstanceItem(i);
+        }
+    }
+
     public void RemoveItem(string itemName)
     {
-        bool found = false;
-        foreach (GameObject item in itemParent)
+        if (itemIndex.ContainsKey(itemName))
         {
-            if (item.transform.childCount != 0)
+            TMP_Text text = stacksText[itemIndex[itemName]].GetComponent<TMP_Text>();
+            if(text.text.Equals("1") || text.text.Equals("0"))
             {
-                if (item.transform.GetChild(0).name == itemName)
-                {
-                    found = true;
-                    Destroy(item.transform.GetChild(0).gameObject);
-                    Debug.Log("Removed " + itemName + " from inventory");
-                    break;
-                }
+                Destroy(itemParent[itemIndex[itemName]].transform.GetChild(0).gameObject);
+                itemIndex.Remove(itemName);
+                stacksText[itemIndex[itemName]].SetActive(false);
+                Debug.Log("Removed " + itemName + " from inventory");
+            }
+            else
+            {
+                int stacks = int.Parse(text.text);
+                stacks--;
+                stacksText[itemIndex[itemName]].GetComponent<TMP_Text>().text = stacks.ToString();
             }
         }
-        if (!found)
+        else
         {
-            Debug.Log("No item found");
+            Debug.Log("Item " + itemName + " not found in inventory");
         }
+    }
+
+    public void SetItemDictionary(Dictionary<string, int> itemIndex)
+    {
+        this.itemIndex = itemIndex;
     }
 }

@@ -16,12 +16,10 @@ public class Dashboard : MonoBehaviour
 
     private bool isPlayerInside = false;
 
-    public PlayerBehaviour playerBehaviour;
-
     // Start is called before the first frame update
     void Start()
     {
-        playerBehaviour = PlayerBehaviour.Instance;
+
     }
 
     // Update is called once per frame
@@ -64,11 +62,18 @@ public class Dashboard : MonoBehaviour
 
     public void LoadRandomLevel()
     {
-        SoundFxManager.Instance.PlayAmbient();
-        Time.timeScale = 1f;
-        playerBehaviour.ResetLives();
-        string scene = LoaderMainMenu.Instance.escenas[Random.Range(0, LoaderMainMenu.Instance.escenas.Length)];
-        PlayerBehaviour.Instance.SavePlayer(scene);
-        SceneManager.LoadScene(scene);
+        LoaderMainMenu.Instance.LoadLevel();
+
+        //SoundFxManager.Instance.PlayAmbient();
+        //Time.timeScale = 1f;
+        //playerBehaviour.ResetLives();
+        //string scene = LoaderMainMenu.Instance.escenas[Random.Range(0, LoaderMainMenu.Instance.escenas.Length)];
+        //PlayerBehaviour.Instance.SavePlayer(scene);
+        //SceneManager.LoadScene(scene);
+    }
+
+    public void SetBackButton(GameObject button)
+    {
+        backButton = button;
     }
 }

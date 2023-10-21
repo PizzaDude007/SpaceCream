@@ -577,7 +577,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.3
+  m_fontSize: 48.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1249,6 +1249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1797857791}
   - component: {fileID: 1797857790}
+  - component: {fileID: 1797857792}
   m_Layer: 0
   m_Name: SaveData
   m_TagString: Untagged
@@ -1276,6 +1277,7 @@ MonoBehaviour:
     currentLevel: 
     levelsCompleted: 
     items: []
+    shop_items: []
     weapons: []
     lastSaved: 
     isFemale: 0
@@ -1317,6 +1319,18 @@ Transform:
   - {fileID: 592291436}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1797857792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797857789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b657be281dc5f4d80b4ef1cc1c7915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1818054832 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 921814846417014562, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
@@ -1412,7 +1426,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.95
+  m_fontSize: 35.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

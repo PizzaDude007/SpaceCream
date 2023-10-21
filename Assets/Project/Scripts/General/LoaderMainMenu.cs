@@ -158,6 +158,34 @@ public class LoaderMainMenu : MonoBehaviour
         //DontDestroyOnLoad(eventListener);
     }
 
+    public void LoadLevel()
+    {
+        DesactivarPaneles();
+        SoundFxManager.Instance.PlayAmbient();
+        open = false;
+        Time.timeScale = 1f;
+        string scene = "";
+        do
+        {
+            scene = escenas[Random.Range(0, escenas.Length)];
+        }
+        while (scene.Equals(SceneManager.GetActiveScene().name));
+        PlayerBehaviour.Instance.ResetLives();
+        PlayerBehaviour.Instance.SavePlayer(scene);
+        SceneManager.LoadScene(scene);
+    }
+
+    public void LoadLevel(string scene)
+    {
+        DesactivarPaneles();
+        SoundFxManager.Instance.PlayAmbient();
+        open = false;
+        Time.timeScale = 1f;
+        PlayerBehaviour.Instance.ResetLives();
+        PlayerBehaviour.Instance.SavePlayer(scene);
+        SceneManager.LoadScene(scene);
+    }
+
     public void PlayGame()
     {
         DesactivarPaneles();

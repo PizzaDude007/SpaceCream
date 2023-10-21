@@ -68,7 +68,8 @@ public class PlayerBehaviour : MonoBehaviour
             player.maxLevel = "ice_cream_shop";
             player.currentLevel = "";
             player.levelsCompleted = new List<int>();
-            player.items = new List<GameObject>();
+            player.items = new List<string>();
+            player.shop_items = new List<string>();
             player.weapons = new List<GameObject>();
             player.lastSaved = DateTime.Now.ToShortDateString() + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute;
             player.isFemale = false;
@@ -250,8 +251,9 @@ public class Player
     public float health = 100;
     public string maxLevel;
     public string currentLevel;
-    public List<int> levelsCompleted;
-    public List<GameObject> items;
+    public List<string> levelsCompleted;
+    public List<string> items;
+    public List<string> shop_items;
     public List<GameObject> weapons;
     public string lastSaved;
     public bool isFemale = false;
