@@ -47,7 +47,7 @@ public class HealingItem : Item
 
     public override string GiveName()
     {
-        return "Health Item";
+        return "Healing Item";
     }
 
     public override void Update(PlayerItems player, int stacks)

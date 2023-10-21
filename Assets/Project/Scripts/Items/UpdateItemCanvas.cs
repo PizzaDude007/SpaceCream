@@ -13,6 +13,10 @@ public class UpdateItemCanvas : MonoBehaviour
     void Start()
     {
         itemIndex = new Dictionary<string, int>();
+        /*foreach(GameObject item in stacksText)
+        {
+            item.SetActive(false);
+        }*/
     }
 
     // Update is called once per frame
@@ -56,6 +60,29 @@ public class UpdateItemCanvas : MonoBehaviour
             stacksText[itemIndex[itemName]].SetActive(true);
             stacksText[itemIndex[itemName]].GetComponent<TMP_Text>().text = stacks.ToString();
             return;
+        } 
+        else
+        {
+            Debug.Log("Item " + itemName + " not found in inventory");
+            Debug.Log("Keys: "+itemIndex.Keys.ToString()+", Values: "+ itemIndex.Values.ToString());
+        }
+    }
+
+    public void InstanceItemWithStacks(string itemName, int stacks)
+    {
+        if (itemIndex.ContainsKey(itemName))
+        {
+            GameObject itemResource = (GameObject)Resources.Load("ItemIcon3D/" + itemName, typeof(GameObject));
+            GameObject item = itemParent[itemIndex[itemName]];
+            GameObject newItem = Instantiate(itemResource, item.transform.position, Quaternion.Euler(Vector3.zero), item.transform);
+            if (stacks == 1)
+            {
+                stacksText[itemIndex[itemName]].SetActive(false);
+                return;
+            }
+            stacksText[itemIndex[itemName]].SetActive(true);
+            stacksText[itemIndex[itemName]].GetComponent<TMP_Text>().text = stacks.ToString();
+            return;
         }
         else
         {
@@ -75,7 +102,8 @@ public class UpdateItemCanvas : MonoBehaviour
     {
         foreach(ItemList i in items)
         {
-            InstanceItem(i);
+            //InstanceItem(i);
+            InstanceItemWithStacks(i.name, i.stacks);
         }
     }
 

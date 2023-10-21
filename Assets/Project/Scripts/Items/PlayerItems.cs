@@ -129,7 +129,7 @@ public class PlayerItems : MonoBehaviour
 
     public void UpdateItemsFromPlayer()
     {
-        List<ItemList> items = new List<ItemList>();
+        items = new List<ItemList>();
         Dictionary<string, int> itemStacks = new Dictionary<string, int>();
         Dictionary<string, int> itemIndex = new Dictionary<string, int>();
         int index = 0;
@@ -140,6 +140,7 @@ public class PlayerItems : MonoBehaviour
                 itemStacks[i]++;
                 //items.Find(x => x.name == i).stacks++;
                 items[itemIndex[i]].stacks++;
+                Debug.Log(i + " stack = " + items[itemIndex[i]].stacks);
             }
             else
             {
@@ -147,9 +148,12 @@ public class PlayerItems : MonoBehaviour
                 index++;
                 itemStacks.Add(i, 1);
                 items.Add(new ItemList(NameToItem(i), i, 1));
+                Debug.Log("Added " + i + " to items list");
             }
         }
         itemCanvas.SetItemDictionary(itemIndex);
+        Debug.Log("Updated items from player");
+        Debug.Log("Items: " + items);
         UpdateCanvas(items);
     }
 
@@ -157,11 +161,11 @@ public class PlayerItems : MonoBehaviour
     {
         switch (name)
         {
-            case "HealingItem":
+            case "Healing Item":
                 return new HealingItem();
-            case "FireDamageItem":
+            case "Fire Damage Item":
                 return new FireDamageItem();
-            case "HealingAreaItem":
+            case "Healing Area Item":
                 return new HealingAreaItem();
             default:
                 return new HealingItem();

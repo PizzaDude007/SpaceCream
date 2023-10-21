@@ -42,7 +42,7 @@ public class PlayerBehaviour : MonoBehaviour
         savedText = savedTextObject.GetComponent<TMP_Text>();
         savedTextObject.SetActive(false);
 
-        if (File.Exists(fileName))
+        if (File.Exists(Application.persistentDataPath + "/" + fileName))
         {
             sr = new StreamReader(Application.persistentDataPath + "/" + fileName, false);
             Debug.Log("Path: " + Application.persistentDataPath + "/" + fileName);
@@ -54,11 +54,6 @@ public class PlayerBehaviour : MonoBehaviour
             //players = JsonUtility.FromJson<List<Player>>(fileContent);
             sr.Close();
         }
-        /*else if (playerData != null)
-        {
-            player = new Player();
-            UpdatePlayer();
-        }*/
         else
         {
             player = new Player();
@@ -67,7 +62,7 @@ public class PlayerBehaviour : MonoBehaviour
             player.health = 100;
             player.maxLevel = "ice_cream_shop";
             player.currentLevel = "";
-            player.levelsCompleted = new List<int>();
+            player.levelsCompleted = new List<string>();
             player.items = new List<string>();
             player.shop_items = new List<string>();
             player.weapons = new List<GameObject>();
@@ -239,6 +234,23 @@ public class PlayerBehaviour : MonoBehaviour
     {
         player.lives = player.maxLives;
         //playerData.lives = player.maxLives;
+    }
+
+    public void ResetSave()
+    {
+        player = new Player();
+        player.lives = 3;
+        player.maxLives = 3;
+        player.health = 100;
+        player.maxLevel = "ice_cream_shop";
+        player.currentLevel = "";
+        player.levelsCompleted = new List<string>();
+        player.items = new List<string>();
+        player.shop_items = new List<string>();
+        player.weapons = new List<GameObject>();
+        player.lastSaved = DateTime.Now.ToShortDateString() + " " + DateTime.Now.Hour + ":" + DateTime.Now.Minute;
+        player.isFemale = false;
+        player.analyticsAccepted = false;
     }
 
 }

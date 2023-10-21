@@ -577,7 +577,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.6
+  m_fontSize: 57.45
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1275,7 +1275,7 @@ MonoBehaviour:
     health: 100
     maxLevel: 0
     currentLevel: 
-    levelsCompleted: 
+    levelsCompleted: []
     items: []
     shop_items: []
     weapons: []
@@ -1426,7 +1426,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.55
+  m_fontSize: 42
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2002,9 +2002,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 38839298}
     - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 1797857790}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
       objectReference: {fileID: 38839298}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetSave
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerBehaviour, Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LoaderMainMenu, General
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: intro_panels
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287236161352101885, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4337126555537852008, guid: a3fb522aef37e53408ee8e42b0fee14e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
